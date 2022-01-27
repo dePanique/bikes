@@ -1,0 +1,4 @@
+.introduction__briefe {
+  display: flex;
+  flex-direction: column;
+}

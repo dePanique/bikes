@@ -1,0 +1,11 @@
+.introduction__description {
+  margin: 0;
+  padding: 0;
+  max-width: 460px;
+  color: rgba(34, 34, 34, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 70%;
+}

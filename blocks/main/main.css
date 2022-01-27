@@ -2,8 +2,9 @@
   box-sizing: border-box;
   grid-area: main;
   background-color: blueviolet;
-  height: 300px;
   margin-top: 74px;
   display: flex;
-  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-areas: "introduction";
 }

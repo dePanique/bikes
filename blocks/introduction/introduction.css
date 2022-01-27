@@ -1,0 +1,7 @@
+.introduction {
+  max-width: 1440px;
+  width: 100%;
+  grid-area: introduction;
+  display: flex;
+  justify-content: space-between;
+}
