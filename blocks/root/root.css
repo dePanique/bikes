@@ -5,4 +5,5 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: geometricPrecision;
+  background: rgba(244, 244, 244, 1);
 }

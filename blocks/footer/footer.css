@@ -1,3 +1,6 @@
 .footer {
-  
+  box-sizing: border-box;
+  grid-area: footer;
+  background-color: blue;
+  height: 300px;
 }

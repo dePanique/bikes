@@ -1,9 +1,15 @@
 @import url(./../vendor/normalize.css);
 @import url(./../vendor/fonts/fonts.css);
+@import url(./../blocks/root/root.css);
+@import url(./../blocks/page/page.css);
 
 @import url(./../blocks/main/main.css);
 
 @import url(./../blocks/header/header.css);
+@import url(./../blocks/header/__navigation-panel/header__navigation-panel.css);
+@import url(./../blocks/header/__navigation-list/header__navigation-list.css);
+@import url(./../blocks/header/__navigation-element/header__navigation-element.css);
+@import url(./../blocks/header/__navigation-text/header__navigation-text.css);
 
 @import url(./../blocks/main/main.css);
 

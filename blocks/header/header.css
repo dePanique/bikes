@@ -1,3 +1,6 @@
 .header {
-  
+  box-sizing: border-box;
+  grid-area: header;
+  display: flex;
+  background-color: burlywood;
 }
