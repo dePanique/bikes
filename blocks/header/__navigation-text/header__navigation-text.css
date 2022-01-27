@@ -1,3 +1,13 @@
 .header__navigation-text {
   text-decoration: none;
+  color: rgba(21, 21, 21, 1);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  transition: opacity;
+  cursor: pointer;
+}
+
+.header__navigation-text:hover {
+  opacity: .75;
 }

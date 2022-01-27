@@ -3,4 +3,7 @@
   grid-area: main;
   background-color: blueviolet;
   height: 300px;
+  margin-top: 74px;
+  display: flex;
+  width: 100%;
 }

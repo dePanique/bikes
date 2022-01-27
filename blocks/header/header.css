@@ -1,6 +1,10 @@
 .header {
   box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
   grid-area: header;
+  position: fixed;
   display: flex;
-  background-color: burlywood;
+  background: rgba(244, 244, 244, 1);
+  z-index: 10;
 }
