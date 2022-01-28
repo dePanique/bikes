@@ -1,6 +1,5 @@
 .footer {
   box-sizing: border-box;
-  grid-area: footer;
   background-color: blue;
-  height: 1000px;
+  height: 500px;
 }

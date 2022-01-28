@@ -1,0 +1,7 @@
+.bikes__point-nav {
+  border: 1px solid black;
+  display: flex;
+  width: 22px;
+  display: flex;
+  justify-content: space-between;
+}

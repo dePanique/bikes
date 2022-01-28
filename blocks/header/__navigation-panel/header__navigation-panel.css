@@ -3,3 +3,9 @@
   margin-right: 120px;
   display: flex;
 }
+
+@media screen and (max-width: 1000px) {
+  .header__navigation-panel {
+    display: none;
+  }
+}

@@ -16,6 +16,19 @@
 <body class="page root">
 
   <header class="header">
+
+    <div class="header__burger-menu">
+      <svg width="22" height="3" viewBox="0 0 22 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="1.5" x2="22" y2="1.5" stroke="#151515" stroke-width="3"/>
+        </svg>
+        <svg width="22" height="3" viewBox="0 0 22 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="1.5" x2="22" y2="1.5" stroke="#151515" stroke-width="3"/>
+          </svg>
+          <svg width="22" height="3" viewBox="0 0 22 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="22" y2="1.5" stroke="#151515" stroke-width="3"/>
+            </svg>
+    </div>
+
     <nav class="header__navigation-panel">
       <ul class="header__navigation-list">
         <li class="header__navigation-element"><a href="" class="header__navigation-text">
@@ -33,7 +46,7 @@
 
   <main class="main">
 
-    <section class="introduction">
+    <!-- <section class="introduction">
       <div class="introduction_briefe">
         <h1 class="introduction__title">Шоссе, ТТ&nbsp;и&nbsp;Грэвел</h1>
         <p class="introduction__description">Триатлонные старты, горные серпантины или грейвел заезды
@@ -44,6 +57,25 @@
         <img class="introduction__manufacturer-line" src="./images/introduction/line.jpg" alt="">
       </div>
       <img class="introduction__picture" src="./images/introduction/introduction-picture.jpg" alt="">
+    </section> -->
+
+    <section class="bikes">
+      <div class="bikes__line"></div>
+      <h2 class="bikes__title">Велосипеды</h2>
+      <select size="1" name="bikes-type-menu" id="" class="bikes__option-menu">
+        <option value="1">Шоссе</option>
+        <option value="2">Грэвел</option>
+        <option value="3">ТТ</option>
+      </select>
+      <div class="bikes__picture-background">
+        <img src="./images/bikes/Shosse1.jpg" alt="" class="bikes__picture">
+        <h3 class="bikes__bike-name">some bike</h3>
+      </div>
+      <div class="bikes__point-nav">
+        <img src="" alt="" class="bikes__point bikes__point-nav_active_true">
+        <img src="" alt="" class="bikes__point">
+        <img src="" alt="" class="bikes__point">
+      </div>
     </section>
 
   </main>

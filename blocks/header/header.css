@@ -1,8 +1,7 @@
 .header {
   box-sizing: border-box;
   max-width: 1440px;
-  width: inherit;
-  grid-area: header;
+  width: 100%;
   position: fixed;
   display: flex;
   background: rgba(244, 244, 244, 1);

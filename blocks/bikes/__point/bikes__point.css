@@ -1,0 +1,6 @@
+.bikes__point {
+  height: 4px;
+  width: 4px;
+  border-radius: 25px;
+  background: rgba(202, 202, 202, 1);
+}
