@@ -1,4 +1,5 @@
 .bikes {
+  box-sizing: border-box;
   width: 320px;
   height: 580px;
   border: 2px black solid;
