@@ -1,11 +1,12 @@
 .bikes__picture-background {
   max-width: 300px;
   background: rgba(196, 196, 196, 1);
-  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 50px;
   border-radius: 20px;
+  display: flex;
   overflow-x: scroll;
-  list-style: none;
+  cursor: col-resize;
+  scroll-snap-align: x mandatory;
 }
