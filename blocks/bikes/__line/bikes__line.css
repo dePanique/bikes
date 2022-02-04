@@ -1,5 +1,11 @@
 .bikes__line {
-  width: 284px;
-  height: 1px;
-  background-color: rgba(227, 227, 227, 1);
+
+}
+
+@media screen and (max-width: 480px) {
+  .bikes__line {
+    width: 284px;
+    height: 1px;
+    background-color: rgba(227, 227, 227, 1);
+  }
 }

@@ -1,5 +1,11 @@
 .bikes__picture {
-  width: 254px;
-  height: 254px;
-  background-color: #F4F4F4;
+
+}
+
+@media screen and (max-width: 480px) {
+  .bikes__picture {
+    width: 254px;
+    height: 254px;
+    background-color: #F4F4F4;
+  }
 }

@@ -1,11 +1,19 @@
 .bikes {
-  box-sizing: border-box;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 18px;
-  padding-right: 18px;
+  max-width: 1440px;
+  width: 100%;
+  background-color: aqua;
+}
+
+@media screen and (max-width: 480px) {
+  .bikes {
+    box-sizing: border-box;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }

@@ -1,6 +1,13 @@
 .bikes__point {
-  height: 4px;
-  width: 4px;
-  border-radius: 25px;
-  background: rgba(202, 202, 202, 1);
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .bikes__point {
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 25px;
+    background: rgba(202, 202, 202, 1);
+  }
 }

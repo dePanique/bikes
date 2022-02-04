@@ -1,14 +1,20 @@
 .bikes__option-menu {
-  width: 114px;
-  height: 30px;
-  border-radius: 2px;
-  border: 1px #E3E3E3 solid;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 11px;
-  line-height: 14px;
-  background: rgba(244, 244, 244, 1);
-  margin-top: 40px;
-  align-self: baseline;
+  display: none;
 }
 
+@media screen and (max-width: 480px) {
+  .bikes__option-menu {
+    display: block;
+    width: 114px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px #E3E3E3 solid;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 14px;
+    background: rgba(244, 244, 244, 1);
+    margin-top: 40px;
+    align-self: baseline;
+  }
+}

@@ -1,7 +1,13 @@
 .bikes__point-nav {
-  display: flex;
-  width: 22px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .bikes__point-nav {
+    display: flex;
+    width: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 }

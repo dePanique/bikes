@@ -3,7 +3,6 @@
   margin-top: 74px;
   display: flex;
   max-width: 1440px;
-
   flex-direction: column;
-  align-content: center;
+  align-items: center;
 }
