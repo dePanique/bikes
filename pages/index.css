@@ -32,7 +32,10 @@
 @import url(./../blocks/bikes/__point/_active/bikes__point_active_true.css);
 @import url(./../blocks/bikes/__title/bikes__title.css);
 @import url(./../blocks/bikes/__bike-name/bikes___bike-name.css);
-
+@import url(./../blocks/bikes/__bikes-nav/bikes__bikes-nav.css);
+@import url(./../blocks/bikes/__bikes-nav-element/bikes__bikes-nav-element.css);
+@import url(./../blocks/bikes/__bikes-row/bikes__bikes-row.css);
+@import url(./../blocks/bikes/__bikes-nav-element/_active/bikes__bikes-nav-element_active_true.css);
 
 
 

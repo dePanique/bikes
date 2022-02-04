@@ -1,18 +1,20 @@
 .bikes__title {
-
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
 }
 
 @media screen and (max-width: 480px) {
   .bikes__title {
-    margin: 0;
-    padding: 0;
     margin-top: 40px;
-    max-width: 284px;
-    font-weight: 700;
-    font-style: normal;
+    width: 284px;
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: -0.5px;
     align-self: flex-start;
   }
 }

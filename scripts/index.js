@@ -1,4 +1,4 @@
-const picdown = document.querySelector('.bikes__picture-background');
+/*const picdown = document.querySelector('.bikes__picture-background');
 
 picdown.addEventListener('pointerdown', (event) => {
   console.log(event.layerX)
@@ -24,4 +24,4 @@ window.onresize = function() {
     document.body.clientWidth,
   );
   console.log(scrollWidth);
-};
+};*/

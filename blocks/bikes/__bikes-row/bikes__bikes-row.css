@@ -1,0 +1,17 @@
+.bikes__bikes-row {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  border: 1px solid black;
+  align-items: baseline;
+  width: calc(100vw - 36px);
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 480px) {
+  .bikes__bikes-row{
+    max-width: 284px;
+    margin-bottom: 0px;
+  }
+}
