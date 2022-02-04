@@ -36,6 +36,8 @@
 @import url(./../blocks/bikes/__bikes-nav-element/bikes__bikes-nav-element.css);
 @import url(./../blocks/bikes/__bikes-row/bikes__bikes-row.css);
 @import url(./../blocks/bikes/__bikes-nav-element/_active/bikes__bikes-nav-element_active_true.css);
+@import url(./../blocks/bikes/__show-frame/bikes__show-frame.css);
+@import url(./../blocks/bikes/__card-frame/bikes__card-frame.css);
 
 
 
