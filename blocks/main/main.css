@@ -1,9 +1,9 @@
 .main {
   box-sizing: border-box;
-  background-color: blueviolet;
   margin-top: 74px;
   display: flex;
   max-width: 1440px;
-  display: grid;
-  grid-template-areas: "introduction";
+
+  flex-direction: column;
+  align-content: center;
 }

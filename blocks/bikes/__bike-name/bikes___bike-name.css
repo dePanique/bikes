@@ -1,3 +1,10 @@
-.bikes___bike-name{
-  
+.bikes__bike-name {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
 }

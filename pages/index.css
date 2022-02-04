@@ -29,8 +29,11 @@
 @import url(./../blocks/bikes/__picture/bikes__picture.css);
 @import url(./../blocks/bikes/__point-nav/bikes__point-nav.css);
 @import url(./../blocks/bikes/__point/bikes__point.css);
-@import url(./../blocks/bikes/__point-nav/_active/bikes__point-nav_active_true.css);
+@import url(./../blocks/bikes/__point/_active/bikes__point_active_true.css);
 @import url(./../blocks/bikes/__title/bikes__title.css);
 @import url(./../blocks/bikes/__bike-name/bikes___bike-name.css);
+
+
+
 
 @import url(./../blocks/footer/footer.css);
