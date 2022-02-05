@@ -1,0 +1,10 @@
+.two-columns {
+  box-sizing: border-box;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}

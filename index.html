@@ -59,40 +59,49 @@
       <img class="introduction__picture" src="./images/introduction/introduction-picture.jpg" alt="">
     </section> -->
 
+    <section class="two-columns">
+      <div class="mobile-line mobile-line_position_two-columns"></div>
+      <img src="./images/two-columns/two-columns-picture.jpg" alt="Небольшой велок городок на фоне гор" class="two-columns__picture">
+      <div class="two-columns__text-column">
+        <h2 class="two-columns__quote">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash;
+          но&nbsp;катайся&raquo;</h2>
+        <h3 class="two-columns__quote-author">Эдди Меркс</h3>
+        <p class="two-columns__quote-author-business">Велогонщик</p>
+      </div>
+    </section>
+
     <section class="bikes">
+
       <div class="bikes__line"></div>
 
       <div class="bikes__bikes-row">
         <h2 class="bikes__title">Велосипеды</h2>
         <ul class="bikes__bikes-nav">
-          <li class="bikes__bikes-nav-element bikes__bikes-nav-element_active_true">Шоссе</li>
+          <li class="bikes__bikes-nav-element">Шоссе</li>
           <li class="bikes__bikes-nav-element">Грэвел</li>
           <li class="bikes__bikes-nav-element">ТТ</li>
         </ul>
       </div>
 
-      <select size="1" name="bikes-type-menu" id="" class="bikes__option-menu">
+      <select size="1" id="bikes-type-menu" class="bikes__option-menu">
         <option value="1">Шоссе</option>
         <option value="2">Грэвел</option>
         <option value="3">ТТ</option>
       </select>
 
       <div class="bikes__show-frame"></div>
-      
+
       <template id="bikes-card">
         <div class="bikes__card-frame">
-
           <div class="bikes__picture-background">
             <img src="./images/bikes/Shosse1.jpg" alt="" class="bikes__picture">
             <h3 class="bikes__bike-name">some bike</h3>
           </div>
-
           <div class="bikes__point-nav">
             <img src="" alt="" class="bikes__point bikes__point_active_true">
             <img src="" alt="" class="bikes__point">
             <img src="" alt="" class="bikes__point">
           </div>
-
         </div>
       </template>
 

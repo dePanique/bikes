@@ -9,7 +9,7 @@
   left: 6px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .bikes__bike-name {
     width: 140px;
     font-style: normal;

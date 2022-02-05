@@ -1,5 +1,6 @@
 .bikes__show-frame {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .bikes__card-frame:nth-of-type(2) {

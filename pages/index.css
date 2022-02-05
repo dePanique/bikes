@@ -22,6 +22,17 @@
 @import url(./../blocks/introduction/__picture/introduction__picture.css);
 @import url(./../blocks/introduction/__manufacturer-tag/introduction__manufacturer-tag.css);
 
+@import url(./../blocks/two-columns/two-columns.css);
+@import url(./../blocks/two-columns/__link/two-columns__link.css);
+@import url(./../blocks/two-columns/__links-row/two-columns__links-row.css);
+@import url(./../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(./../blocks/two-columns/__picture/two-columns__picture.css);
+@import url(./../blocks/two-columns/__quote-author-business/two-columns__quote-author-business.css);
+@import url(./../blocks/two-columns/__quote-author/two-columns__quote-author.css);
+@import url(./../blocks/two-columns/__quote/two-columns__quote.css);
+@import url(./../blocks/two-columns/__title/two-columns__title.css);
+@import url(./../blocks/two-columns/__text-column/two-columns__text-column.css);
+
 @import url(./../blocks/bikes/bikes.css);
 @import url(./../blocks/bikes/__line/bikes__line.css);
 @import url(./../blocks/bikes/__option-menu/bikes__option-menu.css);
@@ -39,6 +50,7 @@
 @import url(./../blocks/bikes/__show-frame/bikes__show-frame.css);
 @import url(./../blocks/bikes/__card-frame/bikes__card-frame.css);
 
-
+@import url(./../blocks/mobile-line/mobile-line.css);
+@import url(./../blocks/mobile-line/_position/mobile-line_position_two-columns.css);
 
 @import url(./../blocks/footer/footer.css);

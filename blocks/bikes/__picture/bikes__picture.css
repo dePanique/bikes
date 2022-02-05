@@ -3,7 +3,7 @@
   height: 340px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .bikes__picture {
     width: 254px;
     height: 254px;

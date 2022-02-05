@@ -10,7 +10,7 @@
   margin-right: 40px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .bikes__bikes-nav {
     display: none;
   }

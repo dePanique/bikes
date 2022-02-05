@@ -1,0 +1,13 @@
+.mobile-line {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile-line {
+    display: block;
+    width: 284px;
+    height: 1px;
+    background-color: red;
+    margin-bottom: 50px;
+  }
+}
