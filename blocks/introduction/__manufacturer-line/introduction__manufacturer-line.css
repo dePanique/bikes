@@ -1,2 +1,7 @@
 .introduction__manufacturer-line {
+  display: block;
+  width: 132px;
+  height: 2px;
+  background-color: rgba(227, 227, 227, 1);
+  margin-left: 20px;
 }

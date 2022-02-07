@@ -16,11 +16,14 @@
 @import url(./../blocks/main/main.css);
 
 @import url(./../blocks/introduction/introduction.css);
+@import url(./../blocks/introduction/__briefe/introduction__briefe.css);
 @import url(./../blocks/introduction/__title/introduction__title.css);
 @import url(./../blocks/introduction/__description/introduction__description.css);
 @import url(./../blocks/introduction/__detail/introduction__detail.css);
 @import url(./../blocks/introduction/__picture/introduction__picture.css);
 @import url(./../blocks/introduction/__manufacturer-tag/introduction__manufacturer-tag.css);
+@import url(./../blocks/introduction/__manufacturer-row/introduction__manufacturer-row.css);
+@import url(./../blocks/introduction/__manufacturer-line/introduction__manufacturer-line.css);
 
 @import url(./../blocks/two-columns/two-columns.css);
 @import url(./../blocks/two-columns/__link/two-columns__link.css);

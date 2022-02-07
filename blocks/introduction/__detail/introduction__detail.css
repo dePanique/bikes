@@ -1,15 +1,29 @@
+@property --p {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 1%;
+}
+
 .introduction__detail {
-  text-decoration: none;
   width: 180px;
   height: 50px;
-  /*
   border-radius: 4px;
-  background: rgba(36, 180, 126, 1);
   font-weight: 600;
   font-style: normal;
   font-size: 14px;
   line-height: 50px;
   color: rgba(255, 255, 255, 1);
   text-align: center;
-  letter-spacing: 1px;*/
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: --p .5s ease-in;
+  background: linear-gradient(to right,
+  #319e75 0% var(--p),#24b47e var(--p) 100%);
+}
+
+.introduction__detail:hover {
+  --p: 100%;
+  background: linear-gradient(to right,
+  #319e75 0% var(--p),#24b47e var(--p) 100%);
 }
