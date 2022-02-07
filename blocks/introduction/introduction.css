@@ -7,3 +7,15 @@
   border: 1px solid red;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1200px) {
+  .introduction {
+    width: 320px;
+    display: grid;
+    grid-template-areas:
+    'title'
+    'picture'
+    'description'
+    'button';
+  }
+}

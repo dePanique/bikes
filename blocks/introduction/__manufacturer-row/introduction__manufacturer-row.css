@@ -3,3 +3,9 @@
   align-items: center;
   margin-top: 167px;
 }
+
+@media screen and (max-width: 1200px) {
+  .introduction__manufacturer-row {
+    display: none;
+  }
+}

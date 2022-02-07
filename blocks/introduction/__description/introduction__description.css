@@ -11,3 +11,9 @@
   line-height: 28px;
   opacity: 70%;
 }
+
+@media screen and (max-width: 1200px) {
+  .introduction__description {
+    grid-area: description;
+  }
+}

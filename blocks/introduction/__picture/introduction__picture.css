@@ -2,3 +2,11 @@
   background-repeat: no-repeat;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 1200px) {
+  .introduction__picture {
+    width: 254px;
+    height: 348px;
+    grid-area: picture;
+  }
+}
