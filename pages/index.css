@@ -57,6 +57,7 @@
 @import url(./../blocks/trainings/__paragraph/trainings__paragraph.css);
 @import url(./../blocks/trainings/__picture/trainings__picture.css);
 @import url(./../blocks/trainings/__title/trainings__title.css);
+@import url(./../blocks/mobile-line/_position/mobile-line_position_trainings.css);
 
 @import url(./../blocks/mobile-line/mobile-line.css);
 @import url(./../blocks/mobile-line/_position/mobile-line_position_two-columns.css);

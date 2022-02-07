@@ -1,3 +1,23 @@
 .trainings__link {
-  
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-right: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(21, 21, 21, 1);
+
+}
+
+@media screen and (max-width: 1200px) {
+  .trainings__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.trainings__link:hover {
+  opacity: .75;
 }

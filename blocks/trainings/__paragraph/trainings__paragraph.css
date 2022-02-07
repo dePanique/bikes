@@ -1,3 +1,19 @@
 .trainings__paragraph {
-  
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: .7;
+  grid-area: paragraph;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 1200px) {
+  .trainings__paragraph {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 40px;
+    max-width: 284px;
+  }
 }

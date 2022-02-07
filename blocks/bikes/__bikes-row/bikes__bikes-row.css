@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  border: 1px solid black;
   align-items: baseline;
   width: calc(100vw - 36px);
   margin-bottom: 120px;

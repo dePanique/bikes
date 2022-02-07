@@ -12,9 +12,8 @@
 @media screen and (max-width: 1200px) {
   .two-columns {
     flex-direction: column;
-    padding-left: 18px;
-    padding-right: 18px;
     padding-top: 40px;
     padding-bottom: 40px;
+    max-width: 284px;
   }
 }
