@@ -9,3 +9,9 @@
   font-size: 20px;
   line-height: 32px;
 }
+
+@media screen and (max-width:1200px) {
+  .two-columns__quote-author {
+    margin-bottom: 4px;
+  }
+}

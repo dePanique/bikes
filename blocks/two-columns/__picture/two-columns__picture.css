@@ -1,4 +1,12 @@
 .two-columns__picture {
   max-width: 650px;
   max-height: 460px;
+  grid-area: picture;
+}
+
+@media screen and (max-width: 1200px) {
+  .two-columns__picture {
+    max-width: 284px;
+    margin-bottom: 40px;
+  }
 }

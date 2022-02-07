@@ -7,7 +7,7 @@
     display: block;
     width: 284px;
     height: 1px;
-    background-color: red;
+    background-color: rgba(227, 227, 227, 1);
     margin-bottom: 50px;
   }
 }

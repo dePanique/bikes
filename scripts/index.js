@@ -130,7 +130,6 @@ function fillShowFrame(bikeObj) {
 
 // Toggle классов
 function toggleClass(target, className) {
-  console.log(target);
   target.classList.toggle(className);
 }
 
@@ -168,7 +167,7 @@ window.onresize = function() {
 
 
 };
-console.log(currentActiveButton)
+
 // Кнопка байков Шоссе
 shosseButton.addEventListener('click', (event) => {
 
