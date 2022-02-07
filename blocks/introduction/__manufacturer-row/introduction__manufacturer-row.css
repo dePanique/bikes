@@ -1,11 +1,11 @@
 .introduction__manufacturer-row {
   display: flex;
   align-items: center;
-  margin-top: 167px;
+  grid-area: manufacturer;
+  align-self: start;
 }
 
 @media screen and (max-width: 1200px) {
   .introduction__manufacturer-row {
-    display: none;
   }
 }

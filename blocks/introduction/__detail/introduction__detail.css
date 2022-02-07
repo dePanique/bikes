@@ -20,6 +20,7 @@
   transition: --p .5s ease-in;
   background: linear-gradient(to right,
   #319e75 0% var(--p),#24b47e var(--p) 100%);
+  grid-area: button;
 }
 
 .introduction__detail:hover {
@@ -32,6 +33,5 @@
   .introduction__detail {
     width: 284px;
     line-height: 46px;
-    grid-area: button;
   }
 }

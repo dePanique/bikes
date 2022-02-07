@@ -1,8 +1,6 @@
 .introduction__description {
   margin: 0;
   padding: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
   max-width: 460px;
   color: rgba(34, 34, 34, 1);
   font-weight: 400;
@@ -10,10 +8,11 @@
   font-size: 18px;
   line-height: 28px;
   opacity: 70%;
+  grid-area: description;
+  align-self: center;
 }
 
 @media screen and (max-width: 1200px) {
   .introduction__description {
-    grid-area: description;
   }
 }
