@@ -24,6 +24,9 @@
 @import url(./../blocks/introduction/__manufacturer-tag/introduction__manufacturer-tag.css);
 @import url(./../blocks/introduction/__manufacturer-row/introduction__manufacturer-row.css);
 @import url(./../blocks/introduction/__manufacturer-line/introduction__manufacturer-line.css);
+@import url(./../blocks/introduction/__card-frame/introduction__card-frame.css);
+@import url(./../blocks/introduction/__card-picture/introduction__card-picture.css);
+@import url(./../blocks/introduction/__picture-block/introduction__picture-block.css);
 
 @import url(./../blocks/two-columns/two-columns.css);
 @import url(./../blocks/two-columns/__link/two-columns__link.css);

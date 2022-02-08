@@ -14,5 +14,7 @@
 
 @media screen and (max-width: 1200px) {
   .introduction__description {
+    font-size: 12px;
+    line-height: 18px;
   }
 }

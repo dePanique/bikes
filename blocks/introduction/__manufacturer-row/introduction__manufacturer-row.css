@@ -7,5 +7,7 @@
 
 @media screen and (max-width: 1200px) {
   .introduction__manufacturer-row {
+    grid-area: unset;
+    display: none;
   }
 }

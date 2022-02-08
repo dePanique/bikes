@@ -9,12 +9,25 @@
   'button picture'
   'manufacturer picture';
   justify-content: end;
-  column-gap: 250px;
+  column-gap: 50px;
+  grid-template-columns: 460px 810px;
   grid-template-rows: 200px auto 217px 227px;
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
   .introduction {
     width: 320px;
+    display: grid;
+    grid-template-areas:
+    'title'
+    'picture'
+    'description'
+    'button';
+    justify-content: center;
+    column-gap: unset;
+    padding-right: 18px;
+    padding-left: 18px;
+    grid-template-rows: 160px 348px 152px 86px;
   }
 }

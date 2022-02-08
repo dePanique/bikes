@@ -1,13 +1,12 @@
 .introduction__picture {
   background-repeat: no-repeat;
   margin-top: 20px;
-  grid-area: picture;
-  justify-self: right;
 }
 
 @media screen and (max-width: 1200px) {
   .introduction__picture {
     width: 254px;
     height: 348px;
+    margin-top: unset;
   }
 }

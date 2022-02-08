@@ -1,0 +1,17 @@
+.introduction__card-frame {
+  box-sizing: border-box;
+  width: 440px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: -20px 13px 20px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 75px;
+  margin-top: 347px;
+  margin-bottom: 79px;
+  margin-right: auto;
+  z-index: 2;
+  background-color: rgba(244, 244, 244, 1);
+}

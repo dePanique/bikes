@@ -13,6 +13,9 @@
 
 @media screen and (max-width: 1200px) {
   .introduction__title {
-    grid-area: title;
+    max-width: 284px;
+    font-size: 32px;
+    line-height: 40px;
+    align-self: center;
   }
 }
