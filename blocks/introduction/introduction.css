@@ -10,7 +10,7 @@
   'manufacturer picture';
   justify-content: end;
   column-gap: 50px;
-
+  padding-left: 18px;
   grid-template-rows: 200px auto 217px 227px;
   position: relative;
 }
@@ -27,7 +27,6 @@
     justify-content: center;
     column-gap: unset;
     padding-right: 18px;
-    padding-left: 18px;
     grid-template-columns: 320px;
     grid-template-rows: 160px 348px 152px 86px;
     justify-items: center;

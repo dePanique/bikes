@@ -1,3 +1,10 @@
 .landscape {
-  
+  max-width: 1320px;
+  display: grid;
+  grid-template-areas:
+  'title'
+  'description'
+  'pictures'
+  'buttons';
+  align-self: flex-end;
 }

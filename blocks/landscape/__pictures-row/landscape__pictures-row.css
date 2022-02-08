@@ -1,3 +1,9 @@
 .landscape__pictures-row {
-  
+  max-width: 1340px;
+  width: 100%;
+  display: grid;
+  grid-area: pictures;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  overflow-x: hidden;
 }

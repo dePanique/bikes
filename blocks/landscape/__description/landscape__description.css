@@ -6,6 +6,9 @@
   font-size: 18px;
   line-height: 28px;
   opacity: .7;
+  grid-area: description;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 1200px) {

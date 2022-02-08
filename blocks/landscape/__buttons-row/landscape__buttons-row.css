@@ -1,3 +1,8 @@
 .landscape__buttons-row {
-  
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  grid-area: buttons;
+  display: flex;
+  margin-top: 67px;
 }
