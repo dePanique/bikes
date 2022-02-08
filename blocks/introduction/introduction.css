@@ -10,7 +10,7 @@
   'manufacturer picture';
   justify-content: end;
   column-gap: 50px;
-  grid-template-columns: 460px 810px;
+
   grid-template-rows: 200px auto 217px 227px;
   position: relative;
 }
