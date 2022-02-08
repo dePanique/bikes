@@ -16,5 +16,7 @@
     width: 100%;
     font-size: 32px;
     line-height: 40px;
+    border-top: 1px solid #e3e3e3;
+    padding-top: 40px;
   }
 }
