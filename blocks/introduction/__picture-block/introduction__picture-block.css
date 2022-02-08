@@ -9,4 +9,10 @@
   z-index: 1;
 }
 
-@
+@media screen and (max-width: 1200px) {
+  .introduction__picture-block {
+    width: 284px;
+    height: 348px;
+    background-size: contain;
+  }
+}

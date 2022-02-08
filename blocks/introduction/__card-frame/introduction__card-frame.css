@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  box-shadow: -20px 13px 20px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: -20px 13px 20px 6px rgba(0, 0, 0, .2);
   position: sticky;
   top: 75px;
   margin-top: 347px;
@@ -14,4 +14,15 @@
   margin-right: auto;
   z-index: 2;
   background-color: rgba(244, 244, 244, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  .introduction__card-frame {
+    position: static;
+    width: 234px;
+    height: 160px;
+    margin-top: 151px;
+    margin-bottom: 0;
+    box-shadow: -9px 11px 20px 0px rgb(0, 0, 0,  .2);
+  }
 }
