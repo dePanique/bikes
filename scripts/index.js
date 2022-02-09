@@ -34,6 +34,8 @@ const gravelButton = bikeTypes[1];
 const ttButton = bikeTypes[2];
 let currentActiveButton = shosseButton;
 
+let currentActivePoint = {};
+
 // Присваиваем bikesShowFrame
 const bikesShowFrame = bikes.querySelector('.bikes__show-frame');
 let getBikesShowFrameStatus = 3;
@@ -67,19 +69,30 @@ function createCard(bikeObj, bikeNumber) {
   if (scrollWidth < 1200) {
     const bikesPoint = element.querySelectorAll('.bikes__point');
 
+    currentActivePoint = bikesPoint[0];
+
     bikesPoint[0].addEventListener('click', () => {
       element.querySelector('.bikes__bike-name').textContent = bikeObj['one'][0];
       element.querySelector('.bikes__picture').src = bikeObj['one'][1];
+      toggleClass(currentActivePoint, 'bikes__point_active_true');
+      currentActivePoint = bikesPoint[0];
+      toggleClass(currentActivePoint, 'bikes__point_active_true');
     });
 
     bikesPoint[1].addEventListener('click', () => {
       element.querySelector('.bikes__bike-name').textContent = bikeObj['two'][0];
       element.querySelector('.bikes__picture').src = bikeObj['two'][1];
+      toggleClass(currentActivePoint, 'bikes__point_active_true');
+      currentActivePoint = bikesPoint[1];
+      toggleClass(currentActivePoint, 'bikes__point_active_true');
     });
 
     bikesPoint[2].addEventListener('click', () => {
       element.querySelector('.bikes__bike-name').textContent = bikeObj['three'][0];
       element.querySelector('.bikes__picture').src = bikeObj['three'][1];
+      toggleClass(currentActivePoint, 'bikes__point_active_true');
+      currentActivePoint = bikesPoint[2];
+      toggleClass(currentActivePoint, 'bikes__point_active_true');
     });
 
   }
@@ -90,9 +103,7 @@ function createCard(bikeObj, bikeNumber) {
 
 // Функция добавляет карточку в конец bikes__show-frame
 function appendBikeCard(element) {
-
   bikesShowFrame.append(element);
-
 }
 
 // Очистить bikes__show-frame от карточек
@@ -131,6 +142,7 @@ function fillShowFrame(bikeObj) {
 // Toggle классов
 function toggleClass(target, className) {
   target.classList.toggle(className);
+  console.log(target)
 }
 
 // toggle для bikes-nav
@@ -236,4 +248,4 @@ bikesSelect.addEventListener('change', (event) => {
 
 // Добавляем карточки при начальном открытие страницы
 fillShowFrame(shosse);
-toggleClass(currentActiveButton, 'bikes__bikes-nav-element_active_true')
+toggleClass(currentActiveButton, 'bikes__bikes-nav-element_active_true');

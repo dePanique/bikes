@@ -49,7 +49,11 @@
 @import url(./../blocks/landscape/__picture/landscape__picture.css);
 @import url(./../blocks/landscape/__pictures-row/landscape__pictures-row.css);
 @import url(./../blocks/landscape/__title/landscape__title.css);
-@import url(./../blocks/landscape/__button/_direction/landscape__buttond_direction_right.css);
+@import url(./../blocks/landscape/__button/_direction/landscape__button_direction_right.css);
+@import url(./../blocks/landscape/__label/landscape__label.css);
+@import url(./../blocks/landscape/__label-mark/landscape__label-mark.css);
+@import url(./../blocks/landscape/__label-mark/_bike-type/landscape__label-mark_bike-type_gravel.css);
+@import url(./../blocks/landscape/__label-mark/_bike-type/landscape__label-mark_bike-type_shosse.css);
 
 @import url(./../blocks/bikes/bikes.css);
 @import url(./../blocks/bikes/__line/bikes__line.css);

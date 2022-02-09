@@ -1,3 +1,15 @@
 .landscape__label-mark {
-  
+  width: 50px;
+  height: 1px;
+  background-color: white;
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .landscape__label-mark {
+    width: 35px;
+    margin-left: 11px;
+    margin-bottom: 8px;
+  }
 }

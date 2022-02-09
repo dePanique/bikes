@@ -1,3 +1,21 @@
 .landscape__label {
-  
+  background-image: url(./../../../images/landscape/label.png);
+  position: absolute;
+  left: 0;
+  top: 344px;
+  width: 100px;
+  height: 40px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .landscape__label {
+    top: 133px;
+    width: 70px;
+    height: 28px;
+  }
 }
