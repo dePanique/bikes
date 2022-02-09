@@ -2,3 +2,9 @@
   max-width: 650px;
   width: auto;
 }
+
+@media screen and (max-width: 1200px) {
+  .landscape__picture {
+    max-width: 284px;
+  }
+}

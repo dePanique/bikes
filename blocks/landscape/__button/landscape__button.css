@@ -1,13 +1,15 @@
 .landscape__button {
   width: 50px;
   height: 50px;
-  margin-right: 20px;
+  background-image: url(./../../../images/landscape/arrow1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
   .landscape__button {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
   }
 }

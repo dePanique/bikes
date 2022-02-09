@@ -1,8 +1,21 @@
 .landscape__buttons-row {
   margin: 0;
   padding: 0;
+  height: 50px;
+  width: 120px;
   list-style-type: none;
   grid-area: buttons;
   display: flex;
+  justify-content: space-between;
   margin-top: 67px;
+}
+
+@media screen and (max-width: 1200px) {
+  .landscape__buttons-row {
+    width: 58px;
+    margin-top: 47px;
+    height: 24px;
+    align-items: center;
+    justify-self: end;
+  }
 }

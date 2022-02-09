@@ -8,3 +8,14 @@
   'buttons';
   align-self: flex-end;
 }
+
+@media screen and (max-width: 1200px) {
+  .landscape {
+    grid-template-areas:
+    'title buttons'
+    'pictures pictures'
+    'description description';
+    align-self: center;
+    border-top: #e3e3e3 1px solid;
+  }
+}

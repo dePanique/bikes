@@ -42,7 +42,6 @@
 
 @import url(./../blocks/landscape/landscape.css);
 @import url(./../blocks/landscape/__button/landscape__button.css);
-@import url(./../blocks/landscape/__button/_direction/landscape__button_direction_right.css);
 @import url(./../blocks/landscape/__buttons-row/landscape__buttons-row.css);
 @import url(./../blocks/landscape/__description/landscape__description.css);
 @import url(./../blocks/landscape/__label-mark/landscape__label-mark.css);
@@ -50,6 +49,7 @@
 @import url(./../blocks/landscape/__picture/landscape__picture.css);
 @import url(./../blocks/landscape/__pictures-row/landscape__pictures-row.css);
 @import url(./../blocks/landscape/__title/landscape__title.css);
+@import url(./../blocks/landscape/__button/_direction/landscape__buttond_direction_right.css);
 
 @import url(./../blocks/bikes/bikes.css);
 @import url(./../blocks/bikes/__line/bikes__line.css);
