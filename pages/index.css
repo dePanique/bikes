@@ -52,8 +52,9 @@
 @import url(./../blocks/landscape/__button/_direction/landscape__button_direction_right.css);
 @import url(./../blocks/landscape/__label/landscape__label.css);
 @import url(./../blocks/landscape/__label-mark/landscape__label-mark.css);
-@import url(./../blocks/landscape/__label-mark/_bike-type/landscape__label-mark_bike-type_gravel.css);
 @import url(./../blocks/landscape/__label-mark/_bike-type/landscape__label-mark_bike-type_shosse.css);
+@import url(./../blocks/landscape/__label-mark/_bike-type/landscape__label-mark_bike-type_gravel.css);
+@import url(./../blocks/landscape/__label-mark/_bike-type/landscape__label-mark_bike-type_tt.css);
 
 @import url(./../blocks/bikes/bikes.css);
 @import url(./../blocks/bikes/__line/bikes__line.css);

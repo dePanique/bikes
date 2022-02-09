@@ -22,29 +22,48 @@ const tt = {
   three: ['Cervelo P-Series', './images/bikes/TT3.jpg']
 }
 
+const landscapeObject = {
+  'shosse': ['./images/landscape/Picture1.jpg', './images/landscape/Picture2.jpg', 'tt', 'gravel', 'Шоссе', `На\u00A0шоссейном велосипеде можно ездить по\u00A0 асфальту на\u00A0разных градиентах: будь\u00A0то горы или равнины. Гонки проходят в\u00A0командном пелотоне, но\u00A0тренироваться можно и\u00A0 самостоятельно.`, 'landscape__label-mark_bike-type_shosse'],
+  'gravel': ['./images/landscape/Picture2.jpg', './images/landscape/Picture3.jpg', 'shosse', 'tt', 'Грэвел', `Грэвел похож на\u00A0шоссейный велосипед, но\u00A0конструкция рамы немного отличается, и\u00A0на\u00A0нём стоят более широкие покрышки, всё для того чтобы проехать по\u00A0лёгкому бездорожью.`, 'landscape__label-mark_bike-type_gravel'],
+  'tt': ['./images/landscape/Picture3.jpg', './images/landscape/Picture1.jpg', 'gravel', 'shosse', 'ТТ', `ТТ\u00A0\u2014 это велосипед для триатлона или раздельного старта, гооняют на\u00A0таком велике только по\u00A0равнинному асфальту, велик очень быстрые и\u00A0аэродинамичный.`, 'landscape__label-mark_bike-type_tt']
+}
+
+let currentLandscapePictures = landscapeObject.shosse;
+
 // Переменная для отслеживания выбранного пользователем типа байка
 let currentBikeObject = shosse;
 
-// Присваиваем секцию Bikes
-const bikes = document.querySelector('.bikes');
+// Секция Bikes
 
+const bikes = document.querySelector('.bikes');
 const bikeTypes = bikes.querySelectorAll('.bikes__bikes-nav-element');
 const shosseButton = bikeTypes[0];
 const gravelButton = bikeTypes[1];
 const ttButton = bikeTypes[2];
 let currentActiveButton = shosseButton;
-
 let currentActivePoint = {};
-
 // Присваиваем bikesShowFrame
 const bikesShowFrame = bikes.querySelector('.bikes__show-frame');
 let getBikesShowFrameStatus = 3;
-
 // Присваиваем bikeCard
 const bikeCard = bikes.querySelector('#bikes-card').content;
-
 // Присваиваем
 const bikesSelect = bikes.querySelector('.bikes__option-menu');
+
+// Секция landscape
+
+const landscape = document.querySelector('.landscape');
+// Картинки landscape
+const landscapePictures = landscape.querySelectorAll('.landscape__picture');
+// Кнопки landscape
+const landscapeButtons = landscape.querySelectorAll('.landscape__button');
+const landscapeLeftArrow = landscapeButtons[0];
+const landscapeRightArrow = landscapeButtons[1];
+// Текст lanscape
+const landscapeTitle = landscape.querySelector('.landscape__title');
+const landscapeDescription = landscape.querySelector('.landscape__description');
+// Значок типа байка
+const landscapeLabelMark = landscape.querySelector('.landscape__label-mark');
 
 
 /* Functions */
@@ -142,7 +161,6 @@ function fillShowFrame(bikeObj) {
 // Toggle классов
 function toggleClass(target, className) {
   target.classList.toggle(className);
-  console.log(target)
 }
 
 // toggle для bikes-nav
@@ -245,6 +263,24 @@ bikesSelect.addEventListener('change', (event) => {
   fillShowFrame(gravel) : fillShowFrame(tt);
 
 });
+
+function renderLandscapeSection(type) {
+  landscapePictures[0].src = landscapeObject[type][0];
+  landscapePictures[1].src = landscapeObject[type][1];
+  landscapeTitle.textContent = landscapeObject[type][4]
+  landscapeDescription.textContent = landscapeObject[type][5];
+  toggleClass(landscapeLabelMark, currentLandscapePictures[6]);
+  currentLandscapePictures = landscapeObject[type];
+  toggleClass(landscapeLabelMark, currentLandscapePictures[6]);
+}
+
+landscapeLeftArrow.addEventListener('click', () => {
+  renderLandscapeSection(currentLandscapePictures[2]);
+})
+
+landscapeRightArrow.addEventListener('click', () => {
+  renderLandscapeSection(currentLandscapePictures[3]);
+})
 
 // Добавляем карточки при начальном открытие страницы
 fillShowFrame(shosse);
