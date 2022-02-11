@@ -1,0 +1,13 @@
+.footer__row {
+  display: flex;
+  align-items: flex-end;
+  min-height: 180px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__row {
+    min-width: 320px;
+    min-height: 144px;
+  }
+}

@@ -79,9 +79,17 @@
 @import url(./../blocks/trainings/__paragraph/trainings__paragraph.css);
 @import url(./../blocks/trainings/__picture/trainings__picture.css);
 @import url(./../blocks/trainings/__title/trainings__title.css);
-@import url(./../blocks/mobile-line/_position/mobile-line_position_trainings.css);
-
-@import url(./../blocks/mobile-line/mobile-line.css);
-@import url(./../blocks/mobile-line/_position/mobile-line_position_two-columns.css);
 
 @import url(./../blocks/footer/footer.css);
+@import url(./../blocks/footer/__input/footer__input.css);
+@import url(./../blocks/footer/__row/footer__row.css);
+@import url(./../blocks/footer/__sitename/footer__sitename.css);
+@import url(./../blocks/footer/__switch/footer__switch.css);
+@import url(./../blocks/footer/__switchdarkmodepicture/footer__switchdarkmodepicture.css);
+@import url(./../blocks/footer/__switchlightmodepicture/footer__switchlightmodepicture.css);
+@import url(./../blocks/footer/__switchpoint/footer__switchpoint.css);
+@import url(./../blocks/footer/__switchtrack/footer__switchtrack.css);
+@import url(./../blocks/footer/__title/footer__title.css);
+@import url(./../blocks/footer/__switchmobile/footer__switchmobile.css);
+@import url(./../blocks/footer/__emailform/footer__emailform.css);
+@import url(./../blocks/footer/__submitemail/footer__submitemail.css);
