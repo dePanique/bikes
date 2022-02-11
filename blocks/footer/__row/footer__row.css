@@ -3,11 +3,13 @@
   align-items: flex-end;
   min-height: 180px;
   justify-content: space-between;
+  margin-left: 120px;
 }
 
 @media screen and (max-width: 1200px) {
   .footer__row {
     min-width: 320px;
     min-height: 144px;
+    margin-left: 0;
   }
 }

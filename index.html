@@ -149,10 +149,12 @@
   </main>
 
   <footer class="footer">
-    <h2 class="footer__title">Подпишитесь на&nbsp;рассылку &mdash;</h2>
-    <form action="submit" class="footer__emailform">
-      <input class="footer__input" type="email" name="" id="" placeholder="Ваш e-mail">
-      <button class="footer__submitemail">ok</button>
+    <h2 class="footer__title">Подпишитесь на рассылку &mdash;</h2>
+    <form class="footer__emailform">
+      <fieldset class="footer__email-info">
+        <input class="footer__input" type="email" name="email" id="emailinput" placeholder="Ваш e-mail" required>
+        <button class="footer__submitemail" type="submit">ok</button>
+      </fieldset>
     </form>
 
     <div class="footer__row">

@@ -66,6 +66,13 @@ const landscapeDescription = landscape.querySelector('.landscape__description');
 const landscapeLabelMark = landscape.querySelector('.landscape__label-mark');
 
 
+// Секция footer
+const footer = document.querySelector('.footer');
+const input = footer.querySelector('.footer__input');
+const submitButton = footer.querySelector('.footer__submitemail');
+const form = footer.querySelector('.footer__emailform');
+
+
 /* Functions */
 
 // Проверить ширину документа
@@ -280,6 +287,30 @@ landscapeLeftArrow.addEventListener('click', () => {
 
 landscapeRightArrow.addEventListener('click', () => {
   renderLandscapeSection(currentLandscapePictures[3]);
+})
+
+// Footer
+submitButton.addEventListener('click', function() {
+
+})
+
+form.addEventListener('submit', function(evt) {
+  evt.preventDefault();
+  input.value = "Круто!";
+  toggleClass(submitButton, 'footer__submitemail_active_true');
+})
+
+input.addEventListener('click', () => {
+  if (submitButton.classList.contains('footer__submitemail_active_true') === false) {
+    toggleClass(submitButton, 'footer__submitemail_active_true');
+    input.value = "";
+  }
+})
+
+input.addEventListener('input', () => {
+  if (submitButton.classList.contains('footer__submitemail_active_true') === false) {
+    toggleClass(submitButton, 'footer__submitemail_active_true');
+  }
 })
 
 // Добавляем карточки при начальном открытие страницы

@@ -1,6 +1,8 @@
 .footer__submitemail {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
   border: none;
-  visibility: --vsbl;
   font: inherit;
   font-weight: 500;
   font-size: 13px;
