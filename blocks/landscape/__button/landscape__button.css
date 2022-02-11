@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+  cursor: pointer;
+  transition: opacity 200ms ease;
 }
 
 @media screen and (max-width: 1200px) {
@@ -12,4 +14,8 @@
     width: 24px;
     height: 24px;
   }
+}
+
+.landscape__button:hover {
+  opacity: .6;
 }
