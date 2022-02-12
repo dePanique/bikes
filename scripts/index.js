@@ -33,7 +33,7 @@ let currentLandscapePictures = landscapeObject.shosse;
 // Переменная для отслеживания выбранного пользователем типа байка
 let currentBikeObject = shosse;
 
-// Секция Bikes
+// Секция Bikes //
 
 const bikes = document.querySelector('.bikes');
 const bikeTypes = bikes.querySelectorAll('.bikes__bikes-nav-element');
@@ -50,7 +50,7 @@ const bikeCard = bikes.querySelector('#bikes-card').content;
 // Присваиваем
 const bikesSelect = bikes.querySelector('.bikes__option-menu');
 
-// Секция landscape
+// Секция landscape //
 
 const landscape = document.querySelector('.landscape');
 // Картинки landscape
@@ -66,11 +66,13 @@ const landscapeDescription = landscape.querySelector('.landscape__description');
 const landscapeLabelMark = landscape.querySelector('.landscape__label-mark');
 
 
-// Секция footer
+// Секция footer //
+
 const footer = document.querySelector('.footer');
 const input = footer.querySelector('.footer__input');
 const submitButton = footer.querySelector('.footer__submitemail');
 const form = footer.querySelector('.footer__emailform');
+const switchPoint = footer.querySelector('.footer__switchpoint');
 
 
 /* Functions */
@@ -311,6 +313,10 @@ input.addEventListener('input', () => {
   if (submitButton.classList.contains('footer__submitemail_active_true') === false) {
     toggleClass(submitButton, 'footer__submitemail_active_true');
   }
+})
+
+switchPoint.addEventListener('click', () => {
+  toggleClass(switchPoint, 'footer__switchpoint_active_true');
 })
 
 // Добавляем карточки при начальном открытие страницы
