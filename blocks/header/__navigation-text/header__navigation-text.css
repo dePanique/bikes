@@ -11,3 +11,10 @@
 .header__navigation-text:hover {
   opacity: .75;
 }
+
+@media screen and (max-width: 1200px) {
+  .header__navigation-text {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

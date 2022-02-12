@@ -1,6 +1,7 @@
-.footer__switchlightmodepicture {
+.switch__lightmodepicture {
   background-image: url(./../../../images/footer/sun.png);
   background-repeat: no-repeat;
   height: 28px;
   width: 28px;
+  margin-right: 24px;
 }

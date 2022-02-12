@@ -1,5 +1,3 @@
-@import url(./../blocks/header/__burger-menu/header__burger-menu.css);
-
 @import url(./../vendor/normalize.css);
 @import url(./../vendor/fonts/fonts.css);
 @import url(./../blocks/root/root.css);
@@ -12,8 +10,11 @@
 @import url(./../blocks/header/__navigation-list/header__navigation-list.css);
 @import url(./../blocks/header/__navigation-element/header__navigation-element.css);
 @import url(./../blocks/header/__navigation-text/header__navigation-text.css);
-
-@import url(./../blocks/main/main.css);
+@import url(./../blocks/header/_menu/header__menu_active.css);
+@import url(./../blocks/header/__navigation-panel/_menu/header__navigation-panel_menu_active.css);
+@import url(./../blocks/header/__burger-menu/header__burger-menu.css);
+@import url(./../blocks/header/__burger-line/header__burger-line.css);
+@import url(./../blocks/header/__burger-line/_active/header__burger-line_active_true.css);
 
 @import url(./../blocks/introduction/introduction.css);
 @import url(./../blocks/introduction/__briefe/introduction__briefe.css);
@@ -84,11 +85,6 @@
 @import url(./../blocks/footer/__input/footer__input.css);
 @import url(./../blocks/footer/__row/footer__row.css);
 @import url(./../blocks/footer/__sitename/footer__sitename.css);
-@import url(./../blocks/footer/__switch/footer__switch.css);
-@import url(./../blocks/footer/__switchdarkmodepicture/footer__switchdarkmodepicture.css);
-@import url(./../blocks/footer/__switchlightmodepicture/footer__switchlightmodepicture.css);
-@import url(./../blocks/footer/__switchpoint/footer__switchpoint.css);
-@import url(./../blocks/footer/__switchtrack/footer__switchtrack.css);
 @import url(./../blocks/footer/__title/footer__title.css);
 @import url(./../blocks/footer/__switchmobile/footer__switchmobile.css);
 @import url(./../blocks/footer/__emailform/footer__emailform.css);
@@ -96,3 +92,13 @@
 @import url(./../blocks/footer/__email-info/footer__email-info.css);
 @import url(./../blocks/footer/__submitemail/_active/footer__submitemail_active_true.css);
 @import url(./../blocks/footer/__switchpoint/_active/footer__switchpoint_active_true.css);
+
+@import url(./../blocks/switch/switch.css);
+@import url(./../blocks/switch/__switchdarkmodepicture/switch__darkmodepicture.css);
+@import url(./../blocks/switch/__switchlightmodepicture/switch__lightmodepicture.css);
+@import url(./../blocks/switch/__switchpoint/switch__point.css);
+@import url(./../blocks/switch/__switchpoint/_active/switch__point_active_true.css);
+@import url(./../blocks/switch/__switchtrack/switch__track.css);
+@import url(./../blocks/switch/_place/switch_place_footer.css);
+@import url(./../blocks/switch/_place/switch_place_header.css);
+@import url(./../blocks/switch/_visible/switch_visible_false.css);

@@ -1,0 +1,5 @@
+.header__menu_active {
+  width: 320px;
+  height: 644px;
+  flex-direction: column;
+}

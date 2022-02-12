@@ -1,0 +1,11 @@
+.header__navigation-panel_menu_active {
+  display: flex;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__navigation-panel_menu_active {
+    justify-content: center;
+    margin-top: 70px;
+  }
+}

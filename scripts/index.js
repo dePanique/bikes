@@ -33,6 +33,15 @@ let currentLandscapePictures = landscapeObject.shosse;
 // Переменная для отслеживания выбранного пользователем типа байка
 let currentBikeObject = shosse;
 
+// Секция Header //
+
+const header = document.querySelector('.header');
+const burgerMenu =  header.querySelector('.header__burger-menu');
+const burgerMenuLines =  header.querySelectorAll('.header__burger-line');
+const headerNavigationPanel = header.querySelector('.header__navigation-panel');
+const headerSwitch = header.querySelector('.switch_place_header');
+const headerSwitchPoint = header.querySelector('.switch__point');
+
 // Секция Bikes //
 
 const bikes = document.querySelector('.bikes');
@@ -72,7 +81,7 @@ const footer = document.querySelector('.footer');
 const input = footer.querySelector('.footer__input');
 const submitButton = footer.querySelector('.footer__submitemail');
 const form = footer.querySelector('.footer__emailform');
-const switchPoint = footer.querySelector('.footer__switchpoint');
+const switchPoint = footer.querySelector('.switch__point');
 
 
 /* Functions */
@@ -177,7 +186,40 @@ function toggleBikesNavElementClass() {
 
 }
 
+// Рендер меню
+
+function renderMobileMenu() {
+  toggleClass(burgerMenuLines[0], 'header__burger-line_active_true');
+  toggleClass(burgerMenuLines[1], 'header__burger-line_active_true');
+  toggleClass(burgerMenuLines[2], 'header__burger-line_active_true');
+  toggleClass(header, 'header__menu_active');
+  toggleClass(headerNavigationPanel, 'header__navigation-panel_menu_active');
+  toggleClass(headerSwitch, 'switch_visible_false');
+}
+
+// Удалить меню
+
+function deleteMobileMenu() {
+  burgerMenuLines[0].classList.remove('header__burger-line_active_true');
+  burgerMenuLines[1].classList.remove('header__burger-line_active_true');
+  burgerMenuLines[2].classList.remove('header__burger-line_active_true');
+  header.classList.remove('header__menu_active');
+  headerNavigationPanel.classList.remove('header__navigation-panel_menu_active');
+  headerSwitch.classList.add('switch_visible_false');
+}
+
 /*Listeners*/
+
+// Header
+
+burgerMenu.addEventListener('click', () => {
+  renderMobileMenu();
+})
+
+headerSwitchPoint.addEventListener('click', () => {
+  toggleClass(headerSwitchPoint, 'switch__point_active_true');
+  toggleClass(switchPoint, 'switch__point_active_true');
+})
 
 // Проверяем разрешение и чтобы изменить количество карточек
 window.onresize = function() {
@@ -202,8 +244,9 @@ window.onresize = function() {
 
     fillShowFrame(currentBikeObject);
 
-  }
+    deleteMobileMenu();
 
+  }
 
 };
 
@@ -316,7 +359,8 @@ input.addEventListener('input', () => {
 })
 
 switchPoint.addEventListener('click', () => {
-  toggleClass(switchPoint, 'footer__switchpoint_active_true');
+  toggleClass(switchPoint, 'switch__point_active_true');
+  toggleClass(headerSwitchPoint, 'switch__point_active_true');
 })
 
 // Добавляем карточки при начальном открытие страницы

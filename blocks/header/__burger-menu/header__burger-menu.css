@@ -9,6 +9,7 @@
   justify-content: space-between;
   cursor: pointer;
   display: none;
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,0 +1,9 @@
+.switch_place_header {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  margin-bottom: 36px;
+  margin-left: 92px;
+}
+
