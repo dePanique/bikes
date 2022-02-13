@@ -41,6 +41,14 @@
 
       @include font600(14px, 20px);
     }
+
+    &_theme_dark {
+      color: $trainings-dark-link;
+
+      &:hover {
+        opacity: .65;
+      }
+    }
   }
 
   &__link-row {
@@ -65,6 +73,11 @@
       margin-bottom: 40px;
       max-width: 284px;
     }
+
+    &_theme_dark {
+      color: $trainings-dark-theme-paragraph;
+    }
+
   }
 
   &__picture {

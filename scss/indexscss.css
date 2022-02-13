@@ -15,6 +15,10 @@
   flex-direction: column;
   margin: auto;
 }
+.page_theme_dark {
+  background-color: #333333;
+  color: white;
+}
 
 .header {
   box-sizing: border-box;
@@ -24,6 +28,10 @@
   display: flex;
   background: #f4f4f4;
   z-index: 10;
+}
+.header_theme_dark {
+  background-color: #333333;
+  color: white;
 }
 .header__burger-line {
   display: block;
@@ -72,6 +80,7 @@
   }
 }
 .header__navigation-element {
+  color: inherit;
   margin-top: 28px;
   margin-bottom: 28px;
 }
@@ -97,6 +106,9 @@
     align-items: center;
   }
 }
+.header__navigation-list_theme_dark {
+  color: white;
+}
 .header__navigation-panel {
   margin-left: auto;
   margin-right: 120px;
@@ -119,7 +131,7 @@
 }
 .header__navigation-text {
   text-decoration: none;
-  color: #151515;
+  color: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -240,12 +252,18 @@
     width: 284px;
   }
 }
+.introduction__description_theme_dark {
+  color: #e5e5e5;
+}
 .introduction__manufacturer-line {
   display: block;
   width: 132px;
   height: 2px;
   background-color: #e3e3e3;
   margin-left: 20px;
+}
+.introduction__manufacturer-line_theme_dark {
+  background-color: #707070;
 }
 .introduction__manufacturer-row {
   display: flex;
@@ -392,6 +410,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: inherit;
 }
 @media screen and (max-width: 1200px) {
   .bikes__bikes-nav {
@@ -415,11 +434,15 @@
   margin-left: 40px;
   margin-right: 40px;
 }
+.bikes__bikes-nav-element_theme_dark {
+  color: #e5e5e5;
+}
 .bikes__bikes-nav-element_active_true {
   opacity: 1;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+  color: inherit;
 }
 .bikes__bikes-nav-element_active_true:hover {
   opacity: 0.75;
@@ -444,6 +467,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.bikes__card-frame:nth-of-type(2) {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .bikes__option-menu {
   display: none;
@@ -485,6 +512,7 @@
   padding-top: 20px;
   position: relative;
   cursor: pointer;
+  background-color: #f4f4f4;
 }
 @media screen and (max-width: 1200px) {
   .bikes__picture-background {
@@ -633,6 +661,9 @@
     line-height: 16px;
   }
 }
+.two-columns__quote-author-business_dark_theme {
+  color: #e5e5e5;
+}
 .two-columns__text-column {
   display: flex;
   flex-direction: column;
@@ -678,6 +709,9 @@
   cursor: pointer;
   transition: opacity 200ms ease;
 }
+.landscape__button_theme_dark {
+  background-image: url(./../../../images/landscape/arrowdark.svg);
+}
 @media screen and (max-width: 1200px) {
   .landscape__button {
     width: 24px;
@@ -689,6 +723,9 @@
 }
 .landscape__button_direction_right {
   background-image: url(./../../.././../images/landscape/arrowToRight.svg);
+}
+.landscape__button_direction_right_theme_dark {
+  background-image: url(./../../../images/landscape/arrowdarktoright.svg);
 }
 .landscape__buttons-row {
   margin: 0;
@@ -730,6 +767,9 @@
     line-height: 18px;
     margin-bottom: 40px;
   }
+}
+.landscape__description_dark_theme {
+  color: #e5e5e5;
 }
 .landscape__label {
   background-image: url(./../../../images/landscape/label.png);
@@ -896,6 +936,12 @@
     line-height: 20px;
   }
 }
+.trainings__link_theme_dark {
+  color: white;
+}
+.trainings__link_theme_dark:hover {
+  opacity: 0.65;
+}
 .trainings__link-row {
   grid-area: links;
   display: flex;
@@ -921,6 +967,9 @@
     margin-bottom: 40px;
     max-width: 284px;
   }
+}
+.trainings__paragraph_theme_dark {
+  color: #e5e5e5;
 }
 .trainings__picture {
   max-width: 580px;
@@ -986,6 +1035,9 @@
     margin-left: 0;
   }
 }
+.footer__emailform_theme_dark {
+  border: 1px solid rgba(125, 125, 125, 0.5);
+}
 .footer__input {
   font: inherit;
   box-sizing: border-box;
@@ -1004,6 +1056,10 @@
   .footer__input {
     height: 50px;
   }
+}
+.footer__input_theme_dark {
+  background-color: #2f2f2f;
+  color: rgba(255, 255, 255, 0.5);
 }
 .footer__row {
   display: flex;
@@ -1027,14 +1083,17 @@
   font-size: 14px;
   line-height: 19.59px;
   color: #cfcfcf;
-  margin-left: 18px;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 1200px) {
   .footer__sitename {
     font-weight: 500;
     margin-bottom: 25px;
+    margin-left: 18px;
   }
+}
+.footer__sitename_theme_dark {
+  color: #565656;
 }
 .footer__submitemail {
   visibility: hidden;
@@ -1091,6 +1150,9 @@
     align-self: center;
   }
 }
+.footer_theme_dark {
+  background-color: #2f2f2f;
+}
 
 .switch {
   align-items: center;
@@ -1117,7 +1179,7 @@
 .switch_visible_false {
   display: none;
 }
-.switch__darkmodepicture {
+.switch__moonpicture {
   background-image: url(./../../../images/footer/moon.png);
   background-repeat: no-repeat;
   height: 28px;
@@ -1125,12 +1187,18 @@
   background-position: center;
   margin-left: 22px;
 }
-.switch__lightmodepicture {
+.switch__moonpicture_theme_dark {
+  background-image: url(./../../../images/footer/moon_dark.png);
+}
+.switch__sunpicture {
   background-image: url(./../../../images/footer/sun.png);
   background-repeat: no-repeat;
   height: 28px;
   width: 28px;
   margin-right: 24px;
+}
+.switch__sunpicture_theme_dark {
+  background-image: url(./../../../images/footer/sun_dark.png);
 }
 .switch__point {
   width: 20px;
@@ -1151,4 +1219,7 @@
   border-radius: 9999px;
   display: flex;
   align-items: center;
+}
+.switch__track_theme_dark {
+  background-color: #545454;
 }/*# sourceMappingURL=indexscss.css.map */

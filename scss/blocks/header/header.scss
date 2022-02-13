@@ -7,6 +7,11 @@
   background: $header-bg-clr;
   z-index: 10;
 
+  &_theme_dark {
+    background-color: $themedark-bg;
+    color: $themedark-fontcolor;
+  }
+
   &__burger-line{
 
     display: block;
@@ -72,6 +77,7 @@
   }
 
   &__navigation-element{
+    color: inherit;
     margin-top: 28px;
     margin-bottom: 28px;
 
@@ -95,6 +101,10 @@
     @include mobile {
       flex-direction: column;
       align-items: center;
+    }
+
+    &_theme_dark {
+      color: $themedark-fontcolor;
     }
   }
 
@@ -123,7 +133,7 @@
   &__navigation-text {
 
     text-decoration: none;
-    color: $clr-black;
+    color: inherit;
     @include font500(14px, 18px);
     transition: opacity;
     cursor: pointer;

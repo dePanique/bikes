@@ -81,6 +81,10 @@
     width: 284px;
   }
 
+  &_theme_dark {
+    color: rgba(229, 229, 229, 1);
+  }
+
  }
 
   &__manufacturer-line {
@@ -89,6 +93,10 @@
   height: 2px;
   background-color: $introduction-line;
   margin-left: 20px;
+
+  &_theme_dark {
+    background-color: $introduction-tagline;
+  }
   }
 
   &__manufacturer-row {

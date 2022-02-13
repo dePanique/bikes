@@ -29,6 +29,10 @@
     cursor: pointer;
     transition: opacity 200ms ease;
 
+    &_theme_dark {
+      background-image: url(./../../../images/landscape/arrowdark.svg);
+    }
+
     @include mobile {
       width: 24px;
       height: 24px;
@@ -40,6 +44,10 @@
 
     &_direction_right {
       background-image: url(./../../.././../images/landscape/arrowToRight.svg);
+
+      &_theme_dark {
+        background-image: url(./../../../images/landscape/arrowdarktoright.svg);
+      }
     }
   }
 
@@ -77,6 +85,10 @@
       width: 284px;
       @include font400(12px, 18px);
       margin-bottom: 40px;
+    }
+
+    &_dark_theme {
+      color: $landscape-dark-theme;
     }
   }
 

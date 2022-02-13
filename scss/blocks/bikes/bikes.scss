@@ -31,6 +31,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: inherit;
 
     @include mobile {
       display: none;
@@ -56,9 +57,14 @@
       margin-right: 40px;
     }
 
+    &_theme_dark {
+      color: $bikes-type;
+    }
+
     &_active_true {
       opacity: 1;
       @include font600(18px, 28px);
+      color: inherit;
 
       &:hover {
         opacity: .75;
@@ -92,6 +98,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &:nth-of-type(2) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
 
   }
 
@@ -140,6 +151,7 @@
     padding-top: 20px;
     position: relative;
     cursor: pointer;
+    background-color: $clr-white;
 
     @include mobile {
 

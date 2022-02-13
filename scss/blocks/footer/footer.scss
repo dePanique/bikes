@@ -24,6 +24,11 @@
     @include mobile {
       margin-left: 0;
     }
+
+    &_theme_dark {
+
+      border: 1px solid $footer-email-form-bg-td;
+    }
   }
 
   &__input{
@@ -43,8 +48,10 @@
       height: 50px;
     }
 
-
-
+    &_theme_dark {
+      background-color: $footer-input-dt;
+      color: $footer-input-font-clr;
+    }
   }
 
   &__row {
@@ -67,12 +74,16 @@
     width: 123px;
     @include font600(14px, 19.59px);
     color: $footer-sitename-clr;
-    margin-left: 18px;
     margin-bottom: 60px;
 
     @include mobile {
       font-weight: 500;
       margin-bottom: 25px;
+      margin-left: 18px;
+    }
+
+    &_theme_dark {
+      color: $footer-sitename-dt;
     }
   }
 
@@ -127,6 +138,10 @@
     align-items: center;
     max-width: 320px;
     align-self: center;
+  }
+
+  &_theme_dark {
+    background-color: $footer-dark-theme;
   }
 
 }

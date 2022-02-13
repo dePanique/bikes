@@ -25,21 +25,30 @@
     display: none;
   }
 
-  &__darkmodepicture {
+  &__moonpicture {
     background-image: url(./../../../images/footer/moon.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
     background-position: center;
     margin-left: 22px;
+
+    &_theme_dark {
+      background-image: url(./../../../images/footer/moon_dark.png);
+    }
+
   }
 
-  &__lightmodepicture {
+  &__sunpicture {
     background-image: url(./../../../images/footer/sun.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
     margin-right: 24px;
+
+    &_theme_dark {
+      background-image: url(./../../../images/footer/sun_dark.png);
+    }
   }
 
   &__point {
@@ -63,5 +72,9 @@
     border-radius: 9999px;
     display: flex;
     align-items: center;
+
+    &_theme_dark {
+      background-color: $switch-track-theme-dark;
+    }
   }
 }

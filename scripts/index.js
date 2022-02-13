@@ -33,6 +33,8 @@ let currentLandscapePictures = landscapeObject.shosse;
 // Переменная для отслеживания выбранного пользователем типа байка
 let currentBikeObject = shosse;
 
+const page = document.querySelector('.page');
+
 // Секция Header //
 
 const header = document.querySelector('.header');
@@ -41,10 +43,25 @@ const burgerMenuLines =  header.querySelectorAll('.header__burger-line');
 const headerNavigationPanel = header.querySelector('.header__navigation-panel');
 const headerSwitch = header.querySelector('.switch_place_header');
 const headerSwitchPoint = header.querySelector('.switch__point');
+const headerNavigationText = header.querySelector('.header__navigation-text');
+const headerNavList = header.querySelector('.header__navigation-list');
+const headerSwitchTrack = header.querySelector('.switch__track');
+
+// Introduction //
+
+const inroduction = document.querySelector('.introduction');
+const inroductionDescription = inroduction.querySelector('.introduction__description');
+const inroductionManufacturerLine = inroduction.querySelector('.introduction__manufacturer-line');
+
+// two-columns//
+
+const twoColumns = document.querySelector('.two-columns');
+const authorBusiness = twoColumns.querySelector('.two-columns__quote-author-business');
 
 // Секция Bikes //
 
 const bikes = document.querySelector('.bikes');
+const bikesNav = bikes.querySelector('.bikes__bikes-nav');
 const bikeTypes = bikes.querySelectorAll('.bikes__bikes-nav-element');
 const shosseButton = bikeTypes[0];
 const gravelButton = bikeTypes[1];
@@ -74,6 +91,12 @@ const landscapeDescription = landscape.querySelector('.landscape__description');
 // Значок типа байка
 const landscapeLabelMark = landscape.querySelector('.landscape__label-mark');
 
+// Trainings //
+
+const trainings = document.querySelector('.trainings');
+const trainingsParagraph = trainings.querySelector('.trainings__paragraph');
+const trainingsLinks = trainings.querySelectorAll('.trainings__link');
+
 
 // Секция footer //
 
@@ -82,7 +105,14 @@ const input = footer.querySelector('.footer__input');
 const submitButton = footer.querySelector('.footer__submitemail');
 const form = footer.querySelector('.footer__emailform');
 const switchPoint = footer.querySelector('.switch__point');
+const siteName = footer.querySelector('.footer__sitename');
+const emailForm = footer.querySelector('.footer__emailform');
+const footerSwitchTrack = footer.querySelector('.switch__track');
 
+// Switch //
+
+const sunPictures = document.querySelectorAll('.switch__sunpicture');
+const moonPictures = document.querySelectorAll('.switch__moonpicture');
 
 /* Functions */
 
@@ -214,11 +244,6 @@ function deleteMobileMenu() {
 
 burgerMenu.addEventListener('click', () => {
   renderMobileMenu();
-})
-
-headerSwitchPoint.addEventListener('click', () => {
-  toggleClass(headerSwitchPoint, 'switch__point_active_true');
-  toggleClass(switchPoint, 'switch__point_active_true');
 })
 
 // Проверяем разрешение и чтобы изменить количество карточек
@@ -358,9 +383,42 @@ input.addEventListener('input', () => {
   }
 })
 
-switchPoint.addEventListener('click', () => {
-  toggleClass(switchPoint, 'switch__point_active_true');
+function changeTheme() {
   toggleClass(headerSwitchPoint, 'switch__point_active_true');
+  toggleClass(switchPoint, 'switch__point_active_true');
+  toggleClass(page, 'page_theme_dark');
+  toggleClass(header, 'header_theme_dark');
+  toggleClass(headerNavList, 'header__navigation-list_theme_dark');
+  toggleClass(inroductionDescription, 'introduction__description_theme_dark');
+  toggleClass(inroductionManufacturerLine, 'introduction__manufacturer-line_theme_dark');
+  toggleClass(authorBusiness, 'two-columns__quote-author-business_dark_theme');
+  toggleClass(landscapeDescription, 'landscape__description_dark_theme');
+  toggleClass(landscapeLeftArrow, 'landscape__button_theme_dark');
+  toggleClass(landscapeRightArrow, 'landscape__button_direction_right_theme_dark');
+  toggleClass(bikeTypes[0], 'bikes__bikes-nav-element_theme_dark');
+  toggleClass(bikeTypes[1], 'bikes__bikes-nav-element_theme_dark');
+  toggleClass(bikeTypes[2], 'bikes__bikes-nav-element_theme_dark');
+  toggleClass(trainingsParagraph, 'trainings__paragraph_theme_dark');
+  toggleClass(trainingsLinks[0], 'trainings__link_theme_dark');
+  toggleClass(trainingsLinks[1], 'trainings__link_theme_dark');
+  toggleClass(footer, 'footer_theme_dark');
+  toggleClass(siteName, 'footer__sitename_theme_dark');
+  toggleClass(input, 'footer__input_theme_dark');
+  toggleClass(emailForm, 'footer__emailform_theme_dark');
+  toggleClass(headerSwitchTrack, 'switch__track_theme_dark');
+  toggleClass(footerSwitchTrack, 'switch__track_theme_dark');
+  toggleClass(sunPictures[0], 'switch__sunpicture_theme_dark');
+  toggleClass(sunPictures[1], 'switch__sunpicture_theme_dark');
+  toggleClass(moonPictures[0], 'switch__moonpicture_theme_dark');
+  toggleClass(moonPictures[1], 'switch__moonpicture_theme_dark');
+}
+
+switchPoint.addEventListener('click', () => {
+  changeTheme();
+})
+
+headerSwitchPoint.addEventListener('click', () => {
+  changeTheme();
 })
 
 // Добавляем карточки при начальном открытие страницы

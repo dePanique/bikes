@@ -74,6 +74,10 @@
       @include font400(10px, 16px);
     }
 
+    &_dark_theme {
+      color: $two-columns-author-business;
+    }
+
   }
 
   &__text-column{
