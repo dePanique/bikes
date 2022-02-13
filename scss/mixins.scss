@@ -1,0 +1,48 @@
+@use 'variables';
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-max-res) {
+    @content;
+  }
+}
+
+@mixin font2($weight, $size, $height, $style: normal, $spacing: normal,  $opacity: 1) {
+  font-weight: $weight;
+  font-size: $size;
+  font-style: $style;
+  letter-spacing: $spacing;
+  opacity: $opacity;
+}
+
+@mixin font700($size, $height) {
+  font-weight: 700;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin font600($size, $height) {
+  font-weight: 600;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin font500($size, $height) {
+  font-weight: 500;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin font400($size, $height) {
+  font-weight: 400;
+  font-size: $size;
+  line-height: $height;
+}
+
+// Анимация бурегр линий
+
+@mixin rotateBurgerLine($deg: 0) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}

@@ -1,0 +1,99 @@
+.two-columns {
+
+  box-sizing: border-box;
+  display: flex;
+  max-width: $mobile-max-res;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  margin-right: 120px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  &__picture {
+
+    max-width: 650px;
+    max-height: 460px;
+    grid-area: picture;
+
+    @include mobile {
+      max-width: 284px;
+      margin-bottom: 40px;
+      border-top: 1px solid $mobile-line-clr;
+      padding-top: 20px;
+    }
+
+  }
+
+  &__quote {
+
+    margin: 0;
+    padding: 0;
+    max-width: 470px;
+    width: 100%;
+
+    @include font600(34px, 44px);
+
+    letter-spacing: -0.5px;
+
+    @include mobile {
+      @include font600(23px, 29px);
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &__quote-author {
+
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: 6px;
+    max-width: 470px;
+
+    @include font500(20px, 32px);
+
+    @include mobile {
+
+      margin-bottom: 4px;
+
+      @include font500(14px, 22px);
+
+    }
+
+  }
+
+  &__quote-author-business{
+    margin: 0;
+    padding: 0;
+    @include font400(16px, 28px);
+    opacity: .7;
+    max-width: 470px;
+
+    @include mobile {
+      @include font400(10px, 16px);
+    }
+
+  }
+
+  &__text-column{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 470px;
+
+    @include mobile {
+      max-width: 284px;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 284px;
+    margin-right: auto;
+  }
+
+}

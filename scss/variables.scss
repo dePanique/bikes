@@ -1,0 +1,42 @@
+// цвета
+$clr-white: rgb(244, 244, 244);
+$clr-red: rgb(182, 24, 24);
+$clr-black: rgb(21, 21, 21);
+$clr-darkgreen: rgb(36, 180, 126);
+$line-color: rgb(227, 227, 227);
+
+$header-bg-clr: $clr-white;
+$header-burger-line: $clr-black;
+
+$introduction-card-shadow: rgba(0, 0, 0, .2);
+$introduction-line: $line-color;
+$introduction-detail-color: rgba(255, 255, 255, 1);
+$introduction-detail-bg: $clr-darkgreen;
+$introduction-detail-bg-hover: rgb(49, 160, 117);
+
+$landscape-line: $line-color;
+$landscape-label-line: rgb(255, 255, 255);
+
+$footer-bg: rgba(239, 239, 239, 1);
+$footer-email-form-bg: rgba(199, 199, 199, 0.5);
+$footer-input-bg: rgba(239, 239, 239, 1);
+$footer-clr: rgba(34, 34, 34, 1);
+$footer-sitename-clr: rgba(207, 207, 207, 1);
+
+$mobile-line-clr: $line-color;
+
+$bikes-option-line: $line-color;
+$bikes-option-bg: rgb(244, 244, 244);
+$bikes-picture-shadow: rgba(0, 0, 0, 0.06);
+$bikes-point: rgba(202, 202, 202, 1);
+$bikes-point-active: $clr-black;
+
+$trainings-color: $clr-black;
+$trainings-line-color: $line-color;
+
+$switch-point-clr: $clr-darkgreen;
+$switch-track-clt: rgb(255, 255, 255);
+
+// разрешения
+$desk-max-res: 1440px;
+$mobile-max-res: 1200px;

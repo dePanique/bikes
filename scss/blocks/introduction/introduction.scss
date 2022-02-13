@@ -1,0 +1,200 @@
+.introduction {
+
+  max-width: $desk-max-res;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+  'title picture'
+  'description picture'
+  'button picture'
+  'manufacturer picture';
+  justify-content: end;
+  column-gap: 50px;
+  padding-left: 18px;
+  grid-template-rows: 200px auto 217px 227px;
+  position: relative;
+
+  @include mobile {
+    width: 320px;
+    display: grid;
+    grid-template-areas:
+    'title'
+    'picture'
+    'description'
+    'button';
+    justify-content: center;
+    column-gap: unset;
+    padding-right: 18px;
+    grid-template-columns: 320px;
+    grid-template-rows: 160px 348px 152px 86px;
+    justify-items: center;
+  }
+
+  &__card-frame {
+    box-sizing: border-box;
+    width: 440px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: -20px 13px 20px 6px $introduction-card-shadow;
+    position: sticky;
+    top: 75px;
+    margin-top: 396px;
+    margin-bottom: 79px;
+    margin-right: auto;
+    z-index: 2;
+    background-color: $clr-white;
+
+    @include mobile {
+      position: static;
+      width: 234px;
+      height: 160px;
+      margin-top: 151px;
+      margin-bottom: 0;
+      box-shadow: -9px 11px 20px 0px $introduction-card-shadow;
+    }
+  }
+
+  &__card-picture {
+    z-index: 2;
+
+  @include mobile {
+      width: 180px;
+      height: 138px;
+  }
+  }
+
+  &__description {
+  margin: 0;
+  padding: 0;
+  max-width: 460px;
+  @include font400(18px, 28px);
+  opacity: .7;
+  grid-area: description;
+  align-self: center;
+
+  @include mobile {
+    @include font400(12px, 18px);
+    width: 284px;
+  }
+
+ }
+
+  &__manufacturer-line {
+  display: block;
+  width: 132px;
+  height: 2px;
+  background-color: $introduction-line;
+  margin-left: 20px;
+  }
+
+  &__manufacturer-row {
+  display: flex;
+  align-items: center;
+  grid-area: manufacturer;
+  align-self: start;
+
+  @include mobile {
+    grid-area: unset;
+    display: none;
+  }
+  }
+
+  &__manufacturer-tag {
+  margin: 0;
+  padding: 0;
+  @include font400(18px, 18px);
+  }
+
+  &__picture {
+    background-repeat: no-repeat;
+    margin-top: 20px;
+
+    @include mobile {
+      width: 254px;
+      height: 348px;
+      margin-top: unset;
+    }
+  }
+
+  &__picture-block {
+    display: block;
+    grid-area: picture;
+    width: 810px;
+    height: 856px;
+    background-image: url(./../../../images/introduction/introduction-picture.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: 1;
+
+    @include mobile {
+      width: 284px;
+      height: 348px;
+      background-size: contain;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    max-width: 460px;
+    @include font700(55px, 60px);
+    letter-spacing: -0.5px;
+    grid-area: title;
+    align-self: end;
+
+    @include mobile {
+      max-width: 284px;
+      @include font700(32px, 40px);
+      align-self: center;
+    }
+  }
+
+  &__detail {
+
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    @include font600(14px, 50px);
+    color: $introduction-detail-color;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    background: $introduction-detail-bg;
+    grid-area: button;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content:'';
+      width: 0;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $introduction-detail-bg-hover;
+      transition: all .5s ease-in-out;
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    &:hover::before {
+      width: 180px;
+      border-radius: 4px;
+    }
+
+    @include mobile {
+      width: 284px;
+      line-height: 46px;
+
+      &:hover::before {
+        width: 284px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

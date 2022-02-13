@@ -1,7 +1,0 @@
-.trainings__link-row {
-  grid-area: links;
-  display: flex;
-  margin-bottom: 60px;
-  max-width: 284px;
-  width: 100%;
-}

@@ -1,0 +1,21 @@
+.switch {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 68px;
+  margin-right: 120px;
+}
+.switch__darkmodepicture {
+  background-image: url(./../../../images/footer/moon.png);
+  background-repeat: no-repeat;
+  height: 28px;
+  width: 28px;
+  background-position: center;
+  margin-left: 22px;
+}
+.switch__lightmodepicture {
+  background-image: url(./../../../images/footer/sun.png);
+  background-repeat: no-repeat;
+  height: 28px;
+  width: 28px;
+  margin-right: 24px;
+}/*# sourceMappingURL=switch.css.map */

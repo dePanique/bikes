@@ -1,8 +1,0 @@
-.main {
-  box-sizing: border-box;
-  margin-top: 74px;
-  display: flex;
-  max-width: 1440px;
-  flex-direction: column;
-  align-items: center;
-}

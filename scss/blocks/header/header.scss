@@ -1,0 +1,150 @@
+.header {
+  box-sizing: border-box;
+  max-width: $desk-max-res;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  background: $header-bg-clr;
+  z-index: 10;
+
+  &__burger-line{
+
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    background: $header-burger-line;
+    opacity: 1;
+    left: 0;
+
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+
+    &:nth-of-type(1) {
+      top: 0;
+    }
+
+    &:nth-of-type(2) {
+      top: 8px;
+    }
+
+    &:nth-of-type(3) {
+      top: 16px;
+    }
+
+    &_active_true{
+
+      &:nth-of-type(1) {
+        top: 9.5px;
+        @include rotateBurgerLine(135deg);
+      }
+
+      &:nth-of-type(2) {
+        opacity: 0;
+        left: -22px;
+      }
+
+      &:nth-of-type(3) {
+        top: 9.5px;
+        @include rotateBurgerLine(-135deg);
+      }
+
+    }
+
+  }
+
+  &__burger-menu{
+
+    width: 22px;
+    height: 19px;
+    margin: 28px 18px 30px auto;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+    position: relative;
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__navigation-element{
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+    &:nth-of-type(2){
+      margin-left: 28px;
+      margin-right: 28px;
+    }
+
+    @include mobile {
+      margin: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__navigation-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__navigation-panel {
+    margin-left: auto;
+    margin-right: 120px;
+    display: flex;
+
+    @include mobile {
+      display: none;
+    }
+
+    &_menu_active {
+      display: flex;
+      margin: 0;
+
+      @include mobile {
+        justify-content: center;
+        margin-top: 70px;
+      }
+    }
+
+
+  }
+
+  &__navigation-text {
+
+    text-decoration: none;
+    color: $clr-black;
+    @include font500(14px, 18px);
+    transition: opacity;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .75;
+    }
+
+    @include mobile {
+      @include font500(18px, 18px);
+    }
+  }
+
+  &__menu_active {
+    width: 320px;
+    height: 644px;
+    flex-direction: column;
+  }
+
+  @include mobile {
+    max-width: 320px;
+    align-self: center;
+  }
+}

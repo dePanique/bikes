@@ -1,0 +1,10 @@
+@import './../../mixins.scss';
+
+.main {
+  box-sizing: border-box;
+  margin-top: 74px;
+  display: flex;
+  max-width: $desk-max-res;
+  flex-direction: column;
+  align-items: center;
+}
