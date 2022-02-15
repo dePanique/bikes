@@ -300,7 +300,7 @@
   grid-area: picture;
   width: 810px;
   height: 856px;
-  background-image: url(./../../../images/introduction/introduction-picture.jpg);
+  background-image: url(./../images/introduction/introduction-picture.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
   z-index: 1;
@@ -702,7 +702,7 @@
 .landscape__button {
   width: 50px;
   height: 50px;
-  background-image: url(./../../../images/landscape/arrow1.svg);
+  background-image: url(./../images/landscape/arrow1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -710,7 +710,7 @@
   transition: opacity 200ms ease;
 }
 .landscape__button_theme_dark {
-  background-image: url(./../../../images/landscape/arrowdark.svg);
+  background-image: url(./../images/landscape/arrowdark.svg);
 }
 @media screen and (max-width: 1200px) {
   .landscape__button {
@@ -722,10 +722,10 @@
   opacity: 0.6;
 }
 .landscape__button_direction_right {
-  background-image: url(./../../.././../images/landscape/arrowToRight.svg);
+  background-image: url(./../images/landscape/arrowToRight.svg);
 }
 .landscape__button_direction_right_theme_dark {
-  background-image: url(./../../../images/landscape/arrowdarktoright.svg);
+  background-image: url(./../images/landscape/arrowdarktoright.svg);
 }
 .landscape__buttons-row {
   margin: 0;
@@ -772,7 +772,7 @@
   color: #e5e5e5;
 }
 .landscape__label {
-  background-image: url(./../../../images/landscape/label.png);
+  background-image: url(./../images/landscape/label.png);
   position: absolute;
   left: 0;
   top: 344px;
@@ -809,7 +809,7 @@
   width: 50px;
   height: 16px;
   background-color: unset;
-  background-image: url(./../../../../images/landscape/shosseSvgMark.svg);
+  background-image: url(./../images/landscape/shosseSvgMark.svg);
   margin-left: 16px;
   margin-bottom: 12px;
   background-size: contain;
@@ -830,7 +830,7 @@
   width: 50px;
   height: 6.5px;
   background-color: unset;
-  background-image: url(./../../../../images/landscape/gravelSvgMark.svg);
+  background-image: url(./../images/landscape/gravelSvgMark.svg);
   margin-left: 16px;
   margin-bottom: 12px;
   background-size: contain;
@@ -1136,7 +1136,7 @@
     display: block;
     width: 38px;
     height: 38px;
-    background-image: url(./../../../images/footer/logo_footer.png);
+    background-image: url(./../images/footer/logo_footer.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 16px;
@@ -1180,7 +1180,7 @@
   display: none;
 }
 .switch__moonpicture {
-  background-image: url(./../../../images/footer/moon.png);
+  background-image: url(./../images/footer/moon.png);
   background-repeat: no-repeat;
   height: 28px;
   width: 28px;
@@ -1188,17 +1188,17 @@
   margin-left: 22px;
 }
 .switch__moonpicture_theme_dark {
-  background-image: url(./../../../images/footer/moon_dark.png);
+  background-image: url(./../images/footer/moon_dark.png);
 }
 .switch__sunpicture {
-  background-image: url(./../../../images/footer/sun.png);
+  background-image: url(./../images/footer/sun.png);
   background-repeat: no-repeat;
   height: 28px;
   width: 28px;
   margin-right: 24px;
 }
 .switch__sunpicture_theme_dark {
-  background-image: url(./../../../images/footer/sun_dark.png);
+  background-image: url(./../images/footer/sun_dark.png);
 }
 .switch__point {
   width: 20px;

@@ -26,7 +26,7 @@
   }
 
   &__moonpicture {
-    background-image: url(./../../../images/footer/moon.png);
+    background-image: url(./../images/footer/moon.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
@@ -34,20 +34,20 @@
     margin-left: 22px;
 
     &_theme_dark {
-      background-image: url(./../../../images/footer/moon_dark.png);
+      background-image: url(./../images/footer/moon_dark.png);
     }
 
   }
 
   &__sunpicture {
-    background-image: url(./../../../images/footer/sun.png);
+    background-image: url(./../images/footer/sun.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
     margin-right: 24px;
 
     &_theme_dark {
-      background-image: url(./../../../images/footer/sun_dark.png);
+      background-image: url(./../images/footer/sun_dark.png);
     }
   }
 

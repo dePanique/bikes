@@ -22,7 +22,7 @@
 
     width: 50px;
     height: 50px;
-    background-image: url(./../../../images/landscape/arrow1.svg);
+    background-image: url(./../images/landscape/arrow1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -30,7 +30,7 @@
     transition: opacity 200ms ease;
 
     &_theme_dark {
-      background-image: url(./../../../images/landscape/arrowdark.svg);
+      background-image: url(./../images/landscape/arrowdark.svg);
     }
 
     @include mobile {
@@ -43,10 +43,10 @@
     }
 
     &_direction_right {
-      background-image: url(./../../.././../images/landscape/arrowToRight.svg);
+      background-image: url(./../images/landscape/arrowToRight.svg);
 
       &_theme_dark {
-        background-image: url(./../../../images/landscape/arrowdarktoright.svg);
+        background-image: url(./../images/landscape/arrowdarktoright.svg);
       }
     }
   }
@@ -93,7 +93,7 @@
   }
 
   &__label {
-    background-image: url(./../../../images/landscape/label.png);
+    background-image: url(./../images/landscape/label.png);
     position: absolute;
     left: 0;
     top: 344px;
@@ -130,7 +130,7 @@
       width: 50px;
       height: 16px;
       background-color: unset;
-      background-image: url(./../../../../images/landscape/shosseSvgMark.svg);
+      background-image: url(./../images/landscape/shosseSvgMark.svg);
       margin-left: 16px;
       margin-bottom: 12px;
       background-size: contain;
@@ -152,7 +152,7 @@
       width: 50px;
       height: 6.5px;
       background-color: unset;
-      background-image: url(./../../../../images/landscape/gravelSvgMark.svg);
+      background-image: url(./../images/landscape/gravelSvgMark.svg);
       margin-left: 16px;
       margin-bottom: 12px;
       background-size: contain;
