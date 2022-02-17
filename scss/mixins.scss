@@ -6,36 +6,65 @@
   }
 }
 
-@mixin font2($weight, $size, $height, $style: normal, $spacing: normal,  $opacity: 1) {
-  font-weight: $weight;
-  font-size: $size;
-  font-style: $style;
-  letter-spacing: $spacing;
-  opacity: $opacity;
+// пример от Стрельцова
+// @mixin font2($weight, $size, $height, $style: normal, $spacing: normal,  $opacity: 1) {
+//   font-weight: $weight;
+//   font-size: $size;
+//   font-style: $style;
+//   letter-spacing: $spacing;
+//   opacity: $opacity;
+// }
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
 }
 
-@mixin font700($size, $height) {
+
+
+@mixin responsiveAfter800px($selector, $value, $coefficient: 1.8, $rez-delta: 640, $target : 0) {
+
+  $str-value: strip-units($value);
+  $target-value : $value/$coefficient;
+
+  @if target != 0 {
+    $value-delta : strip-units($target);
+  } @else {
+    $value-delta : $str-value - strip-units($target-value);
+  }
+
+
+
+  #{$selector}:
+    #{
+      clamp(#{$target-value},
+      calc(#{$target-value} + (100vw - 800px)*(#{$value-delta}/640)),
+      #{$value})
+    };
+
+}
+
+@mixin font700($size, $height, $coefficient: 1.8) {
   font-weight: 700;
-  font-size: $size;
-  line-height: $height;
+  @include responsiveAfter800px(font-size, $size, $coefficient);
+  @include responsiveAfter800px(line-height, $height, $coefficient);
 }
 
-@mixin font600($size, $height) {
+@mixin font600($size, $height, $coefficient: 1.8) {
   font-weight: 600;
-  font-size: $size;
-  line-height: $height;
+  @include responsiveAfter800px(font-size, $size, $coefficient);
+  @include responsiveAfter800px(line-height, $height, $coefficient);
 }
 
-@mixin font500($size, $height) {
+@mixin font500($size, $height, $coefficient: 1.8) {
   font-weight: 500;
-  font-size: $size;
-  line-height: $height;
+  @include responsiveAfter800px(font-size, $size, $coefficient);
+  @include responsiveAfter800px(line-height, $height, $coefficient);
 }
 
-@mixin font400($size, $height) {
+@mixin font400($size, $height, $coefficient: 1.8) {
   font-weight: 400;
-  font-size: $size;
-  line-height: $height;
+  @include responsiveAfter800px(font-size, $size, $coefficient);
+  @include responsiveAfter800px(line-height, $height, $coefficient);
 }
 
 // Анимация бурегр линий
