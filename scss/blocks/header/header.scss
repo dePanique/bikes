@@ -136,7 +136,8 @@
 
     text-decoration: none;
     color: inherit;
-    @include font500(14px, 18px);
+    font-size: 14px;
+    line-height: 18px;
     transition: opacity;
     cursor: pointer;
 
@@ -145,7 +146,7 @@
     }
 
     @include mobile {
-      @include font500(18px, 18px);
+      font-size: 18px;
     }
   }
 

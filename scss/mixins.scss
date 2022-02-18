@@ -21,50 +21,52 @@
 
 
 
-@mixin responsiveAfter800px($selector, $value, $coefficient: 1.8, $rez-delta: 640, $target : 0) {
+@mixin responsiveAfter800px($selector, $value, $coefficient: 1.8, $rez-delta: 640) {
 
   $str-value: strip-units($value);
   $target-value : $value/$coefficient;
-
-  @if target != 0 {
-    $value-delta : strip-units($target);
-  } @else {
-    $value-delta : $str-value - strip-units($target-value);
-  }
-
-
+  $value-delta : $str-value - strip-units($target-value);
 
   #{$selector}:
     #{
       clamp(#{$target-value},
-      calc(#{$target-value} + (100vw - 800px)*(#{$value-delta}/640)),
+      calc(#{$target-value} + (100vw - 800px)*(#{$value-delta}/#{$rez-delta})),
       #{$value})
     };
 
 }
 
-@mixin font700($size, $height, $coefficient: 1.8) {
+@mixin responsiveFont($selector, $int-value, $target-value) {
+
+  $value-delta: strip-units($int-value/$target-value);
+
+  #{$selector}:
+  #{
+    clamp(#{$target-value},
+    calc(#{$target-value} + (100vw - 320px)*(#{$value-delta}/1120)),
+    #{$int-value})
+  };
+
+}
+
+@mixin font700($selector, $int-size, $target-size) {
   font-weight: 700;
-  @include responsiveAfter800px(font-size, $size, $coefficient);
-  @include responsiveAfter800px(line-height, $height, $coefficient);
+  @include responsiveFont($selector, $int-size, $target-size);
 }
 
-@mixin font600($size, $height, $coefficient: 1.8) {
+@mixin font600($selector, $int-size, $target-size) {
   font-weight: 600;
-  @include responsiveAfter800px(font-size, $size, $coefficient);
-  @include responsiveAfter800px(line-height, $height, $coefficient);
+  @include responsiveFont($selector, $int-size, $target-size);
 }
 
-@mixin font500($size, $height, $coefficient: 1.8) {
+@mixin font500($selector, $int-size, $target-size) {
   font-weight: 500;
-  @include responsiveAfter800px(font-size, $size, $coefficient);
-  @include responsiveAfter800px(line-height, $height, $coefficient);
+  @include responsiveFont($selector, $int-size, $target-size);
 }
 
-@mixin font400($size, $height, $coefficient: 1.8) {
+@mixin font400($selector, $int-size, $target-size) {
   font-weight: 400;
-  @include responsiveAfter800px(font-size, $size, $coefficient);
-  @include responsiveAfter800px(line-height, $height, $coefficient);
+  @include responsiveFont($selector, $int-size, $target-size);
 }
 
 // Анимация бурегр линий

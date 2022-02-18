@@ -135,9 +135,8 @@
 .header__navigation-text {
   text-decoration: none;
   color: inherit;
-  font-weight: 500;
-  font-size: clamp(7.7777777778px, calc(7.7777777778px + (100vw - 800px)*(6.2222222222/640)), 14px);
-  line-height: clamp(10px, calc(10px + (100vw - 800px)*(8/640)), 18px);
+  font-size: 14px;
+  line-height: 18px;
   transition: opacity;
   cursor: pointer;
 }
@@ -146,9 +145,7 @@
 }
 @media screen and (max-width: 800px) {
   .header__navigation-text {
-    font-weight: 500;
-    font-size: clamp(10px, calc(10px + (100vw - 800px)*(8/640)), 18px);
-    line-height: clamp(10px, calc(10px + (100vw - 800px)*(8/640)), 18px);
+    font-size: 18px;
   }
 }
 .header__menu_active {
@@ -247,16 +244,14 @@
   padding: 0;
   max-width: 460px;
   font-weight: 400;
-  font-size: clamp(10px, calc(10px + (100vw - 800px)*(8/640)), 18px);
-  line-height: clamp(15.5555555556px, calc(15.5555555556px + (100vw - 800px)*(12.4444444444/640)), 28px);
+  font-size: clamp(12px, calc(12px + (100vw - 320px)*(1.5/1120)), 18px);
+  font-weight: 400;
+  line-height: clamp(18px, calc(18px + (100vw - 320px)*(1.5555555556/1120)), 28px);
   opacity: 0.7;
   grid-area: description;
 }
 @media screen and (max-width: 800px) {
   .introduction__description {
-    font-weight: 400;
-    font-size: clamp(6.6666666667px, calc(6.6666666667px + (100vw - 800px)*(5.3333333333/640)), 12px);
-    line-height: clamp(10px, calc(10px + (100vw - 800px)*(8/640)), 18px);
     width: 284px;
   }
 }
@@ -291,8 +286,9 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: clamp(10px, calc(10px + (100vw - 800px)*(8/640)), 18px);
-  line-height: clamp(10px, calc(10px + (100vw - 800px)*(8/640)), 18px);
+  font-size: clamp(18px, calc(18px + (100vw - 320px)*(1/1120)), 18px);
+  font-weight: 400;
+  line-height: clamp(18px, calc(18px + (100vw - 320px)*(1/1120)), 18px);
 }
 .introduction__picture {
   background-repeat: no-repeat;
@@ -328,8 +324,9 @@
   padding: 0;
   max-width: 460px;
   font-weight: 700;
-  font-size: clamp(30.5555555556px, calc(30.5555555556px + (100vw - 800px)*(24.4444444444/640)), 55px);
-  line-height: clamp(33.3333333333px, calc(33.3333333333px + (100vw - 800px)*(26.6666666667/640)), 60px);
+  font-size: clamp(32px, calc(32px + (100vw - 320px)*(1.875/1120)), 60px);
+  font-weight: 700;
+  line-height: clamp(40px, calc(40px + (100vw - 320px)*(1.5/1120)), 60px);
   letter-spacing: -0.5px;
   grid-area: title;
   align-self: start;
@@ -337,9 +334,6 @@
 @media screen and (max-width: 800px) {
   .introduction__title {
     max-width: 284px;
-    font-weight: 700;
-    font-size: clamp(17.7777777778px, calc(17.7777777778px + (100vw - 800px)*(14.2222222222/640)), 32px);
-    line-height: clamp(22.2222222222px, calc(22.2222222222px + (100vw - 800px)*(17.7777777778/640)), 40px);
     align-self: center;
   }
 }
@@ -348,8 +342,8 @@
   height: 50px;
   border-radius: 4px;
   font-weight: 600;
-  font-size: clamp(14px, calc(14px + (100vw - 800px)*(0/640)), 14px);
-  line-height: clamp(50px, calc(50px + (100vw - 800px)*(0/640)), 50px);
+  font-size: clamp(14px, calc(14px + (100vw - 320px)*(1/1120)), 14px);
+  line-height: 50px;
   color: white;
   text-align: center;
   letter-spacing: 1px;
