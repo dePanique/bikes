@@ -413,7 +413,7 @@ function changeTheme() {
   toggleClass(authorBusiness, 'two-columns__quote-author-business_dark_theme');
   toggleClass(landscapeDescription, 'landscape__description_dark_theme');
   toggleClass(landscapeLeftArrow, 'landscape__button_theme_dark');
-  toggleClass(landscapeRightArrow, 'landscape__button_direction_right_theme_dark');
+  toggleClass(landscapeRightArrow, 'landscape__button_next_theme_dark');
   toggleClass(bikeTypes[0], 'bikes__bikes-nav-element_theme_dark');
   toggleClass(bikeTypes[1], 'bikes__bikes-nav-element_theme_dark');
   toggleClass(bikeTypes[2], 'bikes__bikes-nav-element_theme_dark');

@@ -711,10 +711,10 @@
 .landscape__button:hover {
   opacity: 0.6;
 }
-.landscape__button_direction_right {
+.landscape__button_next {
   background-image: url(./../images/landscape/arrowToRight.svg);
 }
-.landscape__button_direction_right_theme_dark {
+.landscape__button_next_theme_dark {
   background-image: url(./../images/landscape/arrowdarktoright.svg);
 }
 .landscape__buttons-row {
