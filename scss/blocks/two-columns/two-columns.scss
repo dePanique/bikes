@@ -86,6 +86,7 @@
 
     @include mobile {
       max-width: 284px;
+      margin-left: 0;
     }
   }
 
@@ -94,7 +95,6 @@
     padding-top: 40px;
     padding-bottom: 40px;
     max-width: 284px;
-    margin-right: auto;
   }
 
 }

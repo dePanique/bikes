@@ -23,9 +23,26 @@ const tt = {
 }
 
 const landscapeObject = {
-  'shosse': ['./images/landscape/Picture1.jpg', './images/landscape/Picture2.jpg', 'tt', 'gravel', 'Шоссе', `На\u00A0шоссейном велосипеде можно ездить по\u00A0 асфальту на\u00A0разных градиентах: будь\u00A0то горы или равнины. Гонки проходят в\u00A0командном пелотоне, но\u00A0тренироваться можно и\u00A0 самостоятельно.`, 'landscape__label-mark_bike-type_shosse'],
-  'gravel': ['./images/landscape/Picture2.jpg', './images/landscape/Picture3.jpg', 'shosse', 'tt', 'Грэвел', `Грэвел похож на\u00A0шоссейный велосипед, но\u00A0конструкция рамы немного отличается, и\u00A0на\u00A0нём стоят более широкие покрышки, всё для того чтобы проехать по\u00A0лёгкому бездорожью.`, 'landscape__label-mark_bike-type_gravel'],
-  'tt': ['./images/landscape/Picture3.jpg', './images/landscape/Picture1.jpg', 'gravel', 'shosse', 'ТТ', `ТТ\u00A0\u2014 это велосипед для триатлона или раздельного старта, гооняют на\u00A0таком велике только по\u00A0равнинному асфальту, велик очень быстрые и\u00A0аэродинамичный.`, 'landscape__label-mark_bike-type_tt']
+  'shosse': [
+    './images/landscape/Picture1.jpg',
+    './images/landscape/Picture2.jpg', 'tt', 'gravel', 'Шоссе',
+    `На\u00A0шоссейном велосипеде можно ездить по\u00A0 асфальту на\u00A0разных градиентах: будь\u00A0то горы или равнины. Гонки проходят в\u00A0командном пелотоне, но\u00A0тренироваться можно и\u00A0 самостоятельно.`,
+    'landscape__label-mark_bike-type_shosse',
+    'идущая вниз трасса с апексом, на фоне гор', 'велосипедист едет по песчаной трассе окруженной лесом'
+  ],
+  'gravel': [
+    './images/landscape/Picture2.jpg',
+    './images/landscape/Picture3.jpg', 'shosse', 'tt', 'Грэвел',
+    `Грэвел похож на\u00A0шоссейный велосипед, но\u00A0конструкция рамы немного отличается, и\u00A0на\u00A0нём стоят более широкие покрышки, всё для того чтобы проехать по\u00A0лёгкому бездорожью.`,
+    'landscape__label-mark_bike-type_gravel',
+    'велосипедист едет по песчаной трассе окруженной лесом', 'асфальтовая трасса уходящая в горизонт среди равнины с лугами'
+  ],
+    'tt': ['./images/landscape/Picture3.jpg',
+    './images/landscape/Picture1.jpg', 'gravel', 'shosse', 'ТТ',
+    `ТТ\u00A0\u2014 это велосипед для триатлона или раздельного старта, гооняют на\u00A0таком велике только по\u00A0равнинному асфальту, велик очень быстрые и\u00A0аэродинамичный.`,
+    'landscape__label-mark_bike-type_tt',
+    'асфальтовая трасса уходящая в горизонт среди равнины с лугами', 'идущая вниз трасса с апексом, на фоне гор'
+  ]
 }
 
 let currentLandscapePictures = landscapeObject.shosse;
@@ -344,6 +361,8 @@ bikesSelect.addEventListener('change', (event) => {
 function renderLandscapeSection(type) {
   landscapePictures[0].src = landscapeObject[type][0];
   landscapePictures[1].src = landscapeObject[type][1];
+  landscapePictures[0].alt = landscapeObject[type][7];
+  landscapePictures[1].alt = `${landscapeObject[type][8]}`;
   landscapeTitle.textContent = landscapeObject[type][4]
   landscapeDescription.textContent = landscapeObject[type][5];
   toggleClass(landscapeLabelMark, currentLandscapePictures[6]);
@@ -411,6 +430,9 @@ function changeTheme() {
   toggleClass(sunPictures[1], 'switch__sunpicture_theme_dark');
   toggleClass(moonPictures[0], 'switch__moonpicture_theme_dark');
   toggleClass(moonPictures[1], 'switch__moonpicture_theme_dark');
+  toggleClass(burgerMenuLines[0],'header__burger-line_theme_dark');
+  toggleClass(burgerMenuLines[1],'header__burger-line_theme_dark');
+  toggleClass(burgerMenuLines[2],'header__burger-line_theme_dark');
 }
 
 switchPoint.addEventListener('click', () => {

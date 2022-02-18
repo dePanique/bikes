@@ -122,8 +122,6 @@
     background-color: $landscape-label-line;
     @include responsiveAfter800px(margin-left, 16px);
     @include responsiveAfter800px(margin-bottom, 12px);
-    // margin-left: 16px;
-    // margin-bottom: 12px;
 
     @include mobile {
       width: 35px;
@@ -135,7 +133,6 @@
       height: 16px;
       background-color: unset;
       background-image: url(./../images/landscape/shosseSvgMark.svg);
-      // margin-left: 16px;
       @include responsiveAfter800px(margin-bottom, 12px, 7);
       background-size: contain;
       background-repeat: no-repeat;
@@ -157,8 +154,6 @@
       height: 6.5px;
       background-color: unset;
       background-image: url(./../images/landscape/gravelSvgMark.svg);
-      // margin-left: 16px;
-      // margin-bottom: 12px;
       background-size: contain;
       background-repeat: no-repeat;
 

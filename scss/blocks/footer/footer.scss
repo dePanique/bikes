@@ -39,7 +39,9 @@
     padding: 0;
     background: $footer-input-bg;
     border: none;
-    @include font500(13px, 29.98px);
+    font-weight: 500px;
+    font-size: 13px;
+    line-height: 29.98px;
     outline:  none;
     color: $footer-clr;
     margin-left: 20px;
@@ -72,7 +74,9 @@
     margin: 0;
     padding: 0;
     width: 123px;
-    @include font600(14px, 19.59px);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.59px;
     color: $footer-sitename-clr;
     margin-bottom: 60px;
 
@@ -93,7 +97,9 @@
     padding: 0;
     border: none;
     font: inherit;
-    @include font500(13px, 27.98px);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 27.98px;
     cursor: pointer;
     margin-right: 22px;
 
@@ -106,7 +112,9 @@
     margin: 0;
     padding: 0;
     width: 229px;
-    @include font600(24px, 32px);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     margin-left: 120px;
     margin-top: 80px;
     margin-bottom: 50px;

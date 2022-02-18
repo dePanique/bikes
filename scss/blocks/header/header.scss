@@ -59,6 +59,11 @@
 
     }
 
+    &_theme_dark {
+
+      background: $header-burger-line-theme-dark;
+    }
+
   }
 
   &__burger-menu{
@@ -152,8 +157,10 @@
 
   &__menu_active {
     width: 320px;
-    height: 644px;
+    height: 100vh;
     flex-direction: column;
+    justify-content: flex-start;
+
   }
 
   @include mobile {
