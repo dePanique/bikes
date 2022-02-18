@@ -1,0 +1,170 @@
+.header {
+  box-sizing: border-box;
+  max-width: $desk-max-res;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  background: $header-bg-clr;
+  z-index: 10;
+
+  &_theme_dark {
+    background-color: $themedark-bg;
+    color: $themedark-fontcolor;
+  }
+
+  &__burger-line{
+
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    background: $header-burger-line;
+    opacity: 1;
+    left: 0;
+
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+
+    &:nth-of-type(1) {
+      top: 0;
+    }
+
+    &:nth-of-type(2) {
+      top: 8px;
+    }
+
+    &:nth-of-type(3) {
+      top: 16px;
+    }
+
+    &_active_true{
+
+      &:nth-of-type(1) {
+        top: 9.5px;
+        @include rotateBurgerLine(135deg);
+      }
+
+      &:nth-of-type(2) {
+        opacity: 0;
+        left: -22px;
+      }
+
+      &:nth-of-type(3) {
+        top: 9.5px;
+        @include rotateBurgerLine(-135deg);
+      }
+
+    }
+
+    &_theme_dark {
+
+      background: $header-burger-line-theme-dark;
+    }
+
+  }
+
+  &__burger-menu{
+
+    width: 22px;
+    height: 19px;
+    margin: 28px 18px 30px auto;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+    position: relative;
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__navigation-element{
+    color: inherit;
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+    &:nth-of-type(2){
+      margin-left: 28px;
+      margin-right: 28px;
+    }
+
+    @include mobile {
+      margin: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__navigation-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_theme_dark {
+      color: $themedark-fontcolor;
+    }
+  }
+
+  &__navigation-panel {
+    margin-left: auto;
+    margin-right: calc(100vw/12);
+    margin-left: calc(100vw/12);
+    display: flex;
+
+    @include mobile {
+      display: none;
+    }
+
+    &_menu_active {
+      display: flex;
+      margin: 0;
+
+      @include mobile {
+        justify-content: center;
+        margin-top: 70px;
+      }
+    }
+
+
+  }
+
+  &__navigation-text {
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    transition: opacity;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .75;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__menu_active {
+    width: 320px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+
+  @include mobile {
+    max-width: 320px;
+    align-self: center;
+  }
+}

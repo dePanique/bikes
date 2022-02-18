@@ -1,0 +1,80 @@
+.switch {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 68px;
+  margin-right: 120px;
+
+  &_place_footer {
+    display: flex;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &_place_header {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+    margin-bottom: 36px;
+    margin-left: 92px;
+  }
+
+  &_visible_false {
+    display: none;
+  }
+
+  &__moonpicture {
+    background-image: url(./../images/footer/moon.png);
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    margin-left: 22px;
+
+    &_theme_dark {
+      background-image: url(./../images/footer/moon_dark.png);
+    }
+
+  }
+
+  &__sunpicture {
+    background-image: url(./../images/footer/sun.png);
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 28px;
+    margin-right: 24px;
+
+    &_theme_dark {
+      background-image: url(./../images/footer/sun_dark.png);
+    }
+  }
+
+  &__point {
+    width: 20px;
+    height: 20px;
+    background: $switch-point-clr;
+    border-radius: 9999px;
+    transition: transform 200ms linear;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    &_active_true {
+      transform: translateX(20px);
+    }
+  }
+
+  &__track {
+    width: 44px;
+    height: 24px;
+    background: $switch-track-clt;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+
+    &_theme_dark {
+      background-color: $switch-track-theme-dark;
+    }
+  }
+}

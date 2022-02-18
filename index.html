@@ -8,18 +8,180 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Bikes</title>
-  <meta name="description" content="TODO описание проекта">
+  <meta name="description" content="Bikes">
   <meta name="keywords" content="HTML5, CSS, JavaScript, Yandex Practicum">
   <meta name="author" content="Попов Олег">
 </head>
 
-<body class="page">
+<body class="page root">
 
-  <header class="header"></header>
+  <header class="header">
 
-  <main class="main"></main>
+    <div class="header__burger-menu">
+      <span class="header__burger-line "></span>
+      <span class="header__burger-line "></span>
+      <span class="header__burger-line "></span>
+    </div>
 
-  <footer class="footer"></footer>
+    <nav class="header__navigation-panel">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-element"><a href="#landscape" class="header__navigation-text">
+          Покрытия и градиенты
+        </a></li>
+        <li class="header__navigation-element"><a href="#bikes" class="header__navigation-text">
+          Велосипеды
+        </a></li>
+        <li class="header__navigation-element"><a href="#trainings" class="header__navigation-text">
+          Тренировки
+        </a></li>
+      </ul>
+    </nav>
+
+    <div class="switch switch_place_header switch_visible_false">
+      <div class="switch__sunpicture"></div>
+      <div class="switch__track">
+        <div class="switch__point"></div>
+      </div>
+      <div class="switch__moonpicture"></div>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="introduction">
+
+      <h1 class="introduction__title">Шоссе, ТТ&nbsp;и&nbsp;Грэвел</h1>
+      <p class="introduction__description">Триатлонные старты, горные серпантины или грейвел заезды
+        по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда
+        и&nbsp;отправиться в&nbsp;путь.</p>
+      <a class="introduction__detail">Подробнее</a>
+      <div class="introduction__manufacturer-row">
+        <p class="introduction__manufacturer-tag">Cannondale Systemsix</p>
+        <div class="introduction__manufacturer-line"></div>
+      </div>
+      <div class="introduction__picture-block">
+        <div class="introduction__card-frame">
+          <img src="./images/introduction/introduction-pictureOfBike.jpg" alt="картинка велосипеда на белом фоне" class="introduction__card-picture">
+        </div>
+      </div>
+
+    </section>
+
+     <section class="two-columns">
+
+      <img src="./images/two-columns/two-columns-picture.jpg" alt="Небольшой велок городок на фоне гор" class="two-columns__picture">
+      <div class="two-columns__text-column">
+        <h2 class="two-columns__quote">&laquo;Катайся много или мало, долго или коротко, как хочешь &mdash;
+          но&nbsp;катайся&raquo;</h2>
+        <h3 class="two-columns__quote-author">Эдди Меркс</h3>
+        <p class="two-columns__quote-author-business">Велогонщик</p>
+      </div>
+
+    </section>
+
+    <a name="landscape"></a>
+    <section class="landscape">
+      <h2 class="landscape__title">Шоссе</h2>
+      <p class="landscape__description">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;
+        асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины.
+        Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;
+        самостоятельно.</p>
+      <div class="landscape__pictures-row">
+        <div class="landscape__label landscape__label-mark_bike-type_shosse">
+          <div class="landscape__label-mark empty "></div>
+        </div>
+        <img src="./images/landscape/Picture1.jpg" alt="идущая вниз трасса с апексом, на фоне гор" class="landscape__picture">
+        <img src="./images/landscape/Picture2.jpg" alt="велосипедист едет по песчаной трассе окруженной лесом" class="landscape__picture">
+      </div>
+      <div class="landscape__buttons-row">
+        <p class="landscape__button">
+        </p>
+        <p class="landscape__button landscape__button_next">
+        </p>
+      </div>
+    </section>
+
+    <a name="bikes"></a>
+    <section class="bikes">
+
+      <div class="bikes__bikes-row">
+        <h2 class="bikes__title">Велосипеды</h2>
+        <ul class="bikes__bikes-nav">
+          <li class="bikes__bikes-nav-element">Шоссе</li>
+          <li class="bikes__bikes-nav-element">Грэвел</li>
+          <li class="bikes__bikes-nav-element">ТТ</li>
+        </ul>
+      </div>
+
+      <select size="1" id="bikes-type-menu" class="bikes__option-menu">
+        <option value="1">Шоссе</option>
+        <option value="2">Грэвел</option>
+        <option value="3">ТТ</option>
+      </select>
+
+      <div class="bikes__show-frame"></div>
+
+      <template id="bikes-card">
+        <div class="bikes__card-frame">
+          <div class="bikes__picture-background">
+            <img src="./images/bikes/Shosse1.jpg" alt="" class="bikes__picture">
+            <h3 class="bikes__bike-name">some bike</h3>
+          </div>
+          <div class="bikes__point-nav">
+            <img src="" alt="" class="bikes__point bikes__point_active_true">
+            <img src="" alt="" class="bikes__point">
+            <img src="" alt="" class="bikes__point">
+          </div>
+        </div>
+      </template>
+
+    </section>
+
+    <a name="trainings"></a>
+    <section class="trainings">
+
+        <h2 class="trainings__title">Тренировки</h2>
+        <img src="./images/trainings/trainings-picture.jpg" alt="" class="trainings__picture">
+        <p class="trainings__paragraph">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки
+          поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+        <div class="trainings__link-row">
+          <a href="https://www.strava.com" class="trainings__link">Strava</a>
+          <a href="https://www.komoot.com" class="trainings__link">Komoot</a>
+        </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <h2 class="footer__title">Подпишитесь на рассылку &mdash;</h2>
+
+    <form class="footer__emailform">
+      <fieldset class="footer__email-info">
+        <input class="footer__input" type="email" name="email" id="emailinput" placeholder="Ваш e-mail" required>
+        <button class="footer__submitemail" type="submit">ok</button>
+      </fieldset>
+    </form>
+
+    <div class="footer__row">
+
+      <p class="footer__sitename">© Road Club 2021</p>
+
+      <div class="switch switch_place_footer">
+        <div class="switch__sunpicture"></div>
+        <div class="switch__track">
+          <div class="switch__point"></div>
+        </div>
+        <div class="switch__moonpicture"></div>
+      </div>
+
+      <div class="footer__switchmobile"></div>
+
+    </div>
+
+  </footer>
 
   <script src="./scripts/index.js"></script>
 

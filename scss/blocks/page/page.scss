@@ -1,0 +1,15 @@
+@import './../../mixins.scss';
+
+.page {
+  background-color: $clr-white;
+  box-sizing:content-box;
+  max-width: $desk-max-res;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  &_theme_dark {
+    background-color: $themedark-bg;
+    color: $themedark-fontcolor;
+  }
+}

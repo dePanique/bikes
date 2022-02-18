@@ -1,4 +1,5 @@
-.page {
+@import './../../mixins.scss';
+.root {
   font-family: 'Inter', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;

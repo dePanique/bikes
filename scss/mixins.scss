@@ -1,0 +1,81 @@
+@use 'variables';
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-max-res) {
+    @content;
+  }
+}
+
+// пример от Стрельцова
+// @mixin font2($weight, $size, $height, $style: normal, $spacing: normal,  $opacity: 1) {
+//   font-weight: $weight;
+//   font-size: $size;
+//   font-style: $style;
+//   letter-spacing: $spacing;
+//   opacity: $opacity;
+// }
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+
+
+@mixin responsiveAfter800px($selector, $value, $coefficient: 1.8, $rez-delta: 640) {
+
+  
+
+  $str-value: strip-units($value);
+  $target-value : $value/$coefficient;
+  $value-delta : $str-value - strip-units($target-value);
+
+  #{$selector}:
+    #{
+      clamp(#{$target-value},
+      calc(#{$target-value} + (100vw - 800px)*(#{$value-delta}/#{$rez-delta})),
+      #{$value})
+    };
+
+}
+
+@mixin responsiveFont($selector, $int-value, $target-value) {
+
+  $value-delta: strip-units($int-value - $target-value);
+
+  #{$selector}:
+  #{
+    clamp(#{$target-value},
+    calc(#{$int-value} - (1440px - 100vw)*(#{$value-delta}/1120)),
+    #{$int-value})
+  };
+
+}
+
+@mixin font700($selector, $int-size, $target-size) {
+  font-weight: 700;
+  @include responsiveFont($selector, $int-size, $target-size);
+}
+
+@mixin font600($selector, $int-size, $target-size) {
+  font-weight: 600;
+  @include responsiveFont($selector, $int-size, $target-size);
+}
+
+@mixin font500($selector, $int-size, $target-size) {
+  font-weight: 500;
+  @include responsiveFont($selector, $int-size, $target-size);
+}
+
+@mixin font400($selector, $int-size, $target-size) {
+  font-weight: 400;
+  @include responsiveFont($selector, $int-size, $target-size);
+}
+
+// Анимация бурегр линий
+
+@mixin rotateBurgerLine($deg: 0) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}

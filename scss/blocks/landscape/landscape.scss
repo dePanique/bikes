@@ -1,0 +1,217 @@
+.landscape {
+  max-width: 1320px;
+  display: grid;
+  grid-template-areas:
+  'title'
+  'description'
+  'pictures'
+  'buttons';
+  align-self: flex-end;
+  position: relative;
+
+  @include mobile {
+    grid-template-areas:
+    'title buttons'
+    'pictures pictures'
+    'description description';
+    align-self: center;
+    border-top: $landscape-line 1px solid;
+  }
+
+  &__button {
+
+    width: 50px;
+    height: 50px;
+    background-image: url(./../images/landscape/arrow1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    cursor: pointer;
+    transition: opacity 200ms ease;
+
+    &_theme_dark {
+      background-image: url(./../images/landscape/arrowdark.svg);
+    }
+
+    @include mobile {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &_next {
+      background-image: url(./../images/landscape/arrowToRight.svg);
+
+      &_theme_dark {
+        background-image: url(./../images/landscape/arrowdarktoright.svg);
+      }
+    }
+  }
+
+  &__buttons-row {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 120px;
+    list-style-type: none;
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 67px;
+
+    @include mobile {
+      width: 58px;
+      margin-top: 47px;
+      height: 24px;
+      align-items: center;
+      justify-self: end;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0;
+    width: 460px;
+    @include font400(font-size, 18px, 12px);
+    @include font400(line-height, 28px, 18px);
+    opacity: .7;
+    grid-area: description;
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    @include mobile {
+      width: 284px;
+      margin-bottom: 40px;
+    }
+
+    &_dark_theme {
+      color: $landscape-dark-theme;
+    }
+  }
+
+  &__label {
+    background-image: url(./../images/landscape/label.png);
+    position: absolute;
+    left: 0;
+    @include responsiveAfter800px(top, 344px);
+    @include responsiveAfter800px(width, 100px);
+    @include responsiveAfter800px(height, 40px);
+
+    // width: 100px;
+    // height: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-size: cover;
+
+    @include mobile {
+      top: 133px;
+      width: 70px;
+      height: 28px;
+    }
+  }
+
+  &__label-mark {
+
+    @include responsiveAfter800px(width, 50px);
+    height: 1px;
+    background-color: $landscape-label-line;
+    @include responsiveAfter800px(margin-left, 16px);
+    @include responsiveAfter800px(margin-bottom, 12px);
+
+    @include mobile {
+      width: 35px;
+      margin-left: 11px;
+      margin-bottom: 8px;
+    }
+
+    &_bike-type_tt {
+      height: 16px;
+      background-color: unset;
+      background-image: url(./../images/landscape/shosseSvgMark.svg);
+      @include responsiveAfter800px(margin-bottom, 12px, 7);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include mobile {
+        width: 35px;
+        margin-left: 11px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
+    }
+
+    &_bike-type_shosse {
+      background-color: transparent;
+    }
+
+    &_bike-type_gravel {
+      height: 6.5px;
+      background-color: unset;
+      background-image: url(./../images/landscape/gravelSvgMark.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @include mobile {
+        width: 35px;
+        margin-left: 11px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__picture {
+
+    @include responsiveAfter800px(width, 650px);
+
+    @include mobile {
+      max-width: 284px;
+    }
+  }
+
+  &__pictures-row {
+
+    max-width: 1340px;
+    width: 100%;
+    display: grid;
+    grid-area: pictures;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+
+    @include mobile {
+
+      width: 284px;
+      max-height: 175px;
+      grid-template-columns: 1fr;
+      column-gap: unset;
+    }
+  }
+
+  &__title {
+
+    margin: 0;
+    padding: 0;
+    @include font700(font-size, 55px, 32px);
+    @include font700(line-height, 60px, 40px);
+    letter-spacing: -.5px;
+    max-width: 460px;
+    width: 100%;
+    grid-area: title;
+    margin-top: 60px;
+
+    @include mobile {
+
+      width: 130px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}

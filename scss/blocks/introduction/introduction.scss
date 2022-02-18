@@ -1,0 +1,225 @@
+.introduction {
+
+  max-width: 1320px;
+  width: 100%;
+  max-height: 856px;
+  box-sizing: border-box;
+  display: grid;
+  align-self: flex-end;
+  grid-template-areas:
+  'title picture'
+  'description picture'
+  'button picture'
+  'manufacturer picture';
+  padding-top: 20px;
+  grid-template-columns: minmax(195px, 585px) minmax(100px, 735px);
+  grid-template-rows: min-content min-content 50px min-content;
+  position: relative;
+
+  @include mobile {
+    display: grid;
+    grid-template-areas:
+    'title'
+    'picture'
+    'description'
+    'button';
+    justify-content: center;
+    column-gap: unset;
+    padding-right: 18px;
+    grid-template-columns: 320px;
+    grid-template-rows: 160px 348px 152px 86px;
+    justify-items: center;
+  }
+
+  &__card-frame {
+    box-sizing: border-box;
+    @include responsiveAfter800px(width, 440px);
+    @include responsiveAfter800px(height, 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: -20px 13px 20px 6px $introduction-card-shadow;
+    position: sticky;
+    top: 75px;
+    @include responsiveAfter800px(margin-top, 327px, 1.4);
+    @include responsiveAfter800px(margin-bottom, 79px, 1.4);
+    margin-right: auto;
+    z-index: 2;
+    background-color: $clr-white;
+
+    @include mobile {
+      position: static;
+      width: 234px;
+      height: 160px;
+      margin-top: 151px;
+      margin-bottom: 0;
+      box-shadow: -9px 11px 20px 0px $introduction-card-shadow;
+    }
+  }
+
+  &__card-picture {
+
+    z-index: 2;
+    @include responsiveAfter800px(width, 340px);
+    @include responsiveAfter800px(height, 260px);
+
+
+  @include mobile {
+
+      width: 180px;
+      height: 138px;
+    }
+
+  }
+
+  &__description {
+
+  margin: 0;
+  @include responsiveAfter800px(margin-top, 50px);
+  @include responsiveAfter800px(margin-bottom, 50px);
+  padding: 0;
+  max-width: 460px;
+  @include font400(font-size, 18px, 12px);
+  @include font400(line-height, 28px, 18px);
+  opacity: .7;
+  grid-area: description;
+
+  @include mobile {
+    width: 284px;
+  }
+
+  &_theme_dark {
+    color: rgba(229, 229, 229, 1);
+  }
+
+ }
+
+  &__manufacturer-line {
+  display: block;
+  width: 132px;
+  height: 2px;
+  background-color: $introduction-line;
+  margin-left: 20px;
+
+    &_theme_dark {
+      background-color: $introduction-tagline;
+    }
+
+  }
+
+  &__manufacturer-row {
+  display: flex;
+  align-items: center;
+  grid-area: manufacturer;
+  align-self: start;
+
+  @include responsiveAfter800px(margin-top, 167px, 1.8);
+  @include responsiveAfter800px(margin-bottom, 209px, 1.8);
+
+    @include mobile {
+      grid-area: unset;
+      display: none;
+    }
+  }
+
+  &__manufacturer-tag {
+  margin: 0;
+  padding: 0;
+  @include font400(font-size, 18px, 18px);
+  @include font400(line-height, 18px, 18px);
+
+  }
+
+  &__picture {
+    background-repeat: no-repeat;
+    margin-top: 20px;
+
+    @include mobile {
+      width: 254px;
+      height: 348px;
+      margin-top: unset;
+    }
+  }
+
+  &__picture-block {
+    display: block;
+    grid-area: picture;
+    background-image: url(./../images/introduction/introduction-picture.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    z-index: 1;
+    max-height: 836px;
+
+    @include mobile {
+      width: 284px;
+      height: 348px;
+      background-size: contain;
+    }
+  }
+
+  &__title {
+
+    margin: 0;
+    @include responsiveAfter800px(margin-top, 60px, $coefficient: 1.8);
+    padding: 0;
+    max-width: 460px;
+    @include font700(font-size, 60px, 32px);
+    @include font700(line-height, 60px, 40px);
+    letter-spacing: -0.5px;
+    grid-area: title;
+    align-self: start;
+
+    @include mobile {
+      max-width: 284px;
+      align-self: center;
+    }
+  }
+
+  &__detail {
+
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    @include font600(font-size, 14px, 14px);
+    line-height: 50px;
+    color: $introduction-detail-color;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    background: $introduction-detail-bg;
+    grid-area: button;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content:'';
+      width: 0;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $introduction-detail-bg-hover;
+      transition: all .5s ease-in-out;
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    &:hover::before {
+      width: 180px;
+      border-radius: 4px;
+    }
+
+    @include mobile {
+      width: 284px;
+      line-height: 46px;
+
+      &:hover::before {
+        width: 284px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+.bikes {
+
+  max-width: $desk-max-res;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+
+  &__bike-name {
+
+    margin: 0;
+    padding: 0;
+    @include font600(font-size, 18px, 14px);
+    @include font600(line-height, 22px, 18px);
+    position: absolute;
+    bottom: -42px;
+    left: 6px;
+
+    @include mobile {
+      width: 140px;
+      text-align: center;
+      position:unset;
+    }
+
+  }
+
+  &__bikes-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+
+    @include mobile {
+      display: none;
+    }
+
+  }
+
+  &__bikes-nav-element {
+
+    margin: 0;
+    padding: 0;
+    max-width: 62px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: .7;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:nth-child(2) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    &_theme_dark {
+      color: $bikes-type;
+    }
+
+    &_active_true {
+      opacity: 1;
+      font-weight: 600;
+      color: inherit;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+  }
+
+  &__bikes-row {
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: baseline;
+    margin-bottom: 60px;
+    padding-right: 18px;
+
+    @include mobile {
+
+      max-width: 284px;
+      margin-bottom: 0px;
+      border-top: 1px solid $mobile-line-clr;
+
+    }
+
+  }
+
+  &__card-frame {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+
+    &:nth-of-type(2) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+  }
+
+  &__option-menu {
+
+    display: none;
+
+    @include mobile {
+
+      display: block;
+      width: 114px;
+      height: 30px;
+      border-radius: 2px;
+      border: 1px $bikes-option-line solid;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 14px;
+      background: $clr-white;
+      margin-top: 40px;
+      align-self: baseline;
+
+    }
+
+  }
+
+  &__picture {
+
+    width: 340px;
+    height: 340px;
+    cursor: pointer;
+
+    @include mobile {
+      width: 254px;
+      height: 254px;
+      background-color: $bikes-option-bg;
+    }
+
+  }
+
+  &__picture-background {
+
+    width: 380px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 0px 20px 140px 0px $bikes-picture-shadow;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: $clr-white;
+
+    @include mobile {
+
+      width: 284px;
+      margin-top: 20px;
+      padding-top: 14.5px;
+      padding-bottom: 16px;
+
+    }
+  }
+
+  &__point {
+
+    display: none;
+    cursor: pointer;
+
+    @include mobile {
+
+      display: block;
+      height: 4px;
+      width: 4px;
+      border-radius: 25px;
+      background: $bikes-point;
+
+      &_active_true {
+
+        background: $bikes-point-active;
+
+      }
+
+    }
+  }
+
+  &__point-nav {
+
+    display: none;
+
+    @include mobile {
+      display: flex;
+      width: 22px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+
+  &__show-frame {
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-around;
+  }
+
+  &__title {
+
+    width: 460px;
+    margin: 0;
+    padding: 0;
+    @include font700(font-size, 55px, 32px);
+    @include font700(line-height, 60px, 40px);
+    letter-spacing: -0.5px;
+
+    @include mobile {
+
+      margin-top: 40px;
+      width: 284px;
+      align-self: flex-start;
+
+    }
+  }
+
+  @include mobile {
+    box-sizing: border-box;
+    max-width: 320px;
+    padding: 40px 18px;
+  }
+
+}

@@ -1,0 +1,155 @@
+.footer {
+
+  box-sizing: border-box;
+  background: $footer-bg;
+  max-width: $desk-max-res;
+  display: flex;
+  flex-direction: column;
+
+  &__email-info {
+    border: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: 284px;
+    justify-content: space-between;
+  }
+
+  &__emailform {
+    width: 284px;
+    border: 1px solid $footer-email-form-bg;
+    border-radius: 4px;
+    margin-left: 120px;
+
+    @include mobile {
+      margin-left: 0;
+    }
+
+    &_theme_dark {
+
+      border: 1px solid $footer-email-form-bg-td;
+    }
+  }
+
+  &__input{
+
+    font: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: $footer-input-bg;
+    border: none;
+    font-weight: 500px;
+    font-size: 13px;
+    line-height: 29.98px;
+    outline:  none;
+    color: $footer-clr;
+    margin-left: 20px;
+
+    @include mobile {
+      height: 50px;
+    }
+
+    &_theme_dark {
+      background-color: $footer-input-dt;
+      color: $footer-input-font-clr;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+    min-height: 180px;
+    justify-content: space-between;
+    margin-left: 120px;
+
+    @include mobile {
+      min-width: 320px;
+      min-height: 144px;
+      margin-left: 0;
+    }
+  }
+
+  &__sitename {
+    margin: 0;
+    padding: 0;
+    width: 123px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.59px;
+    color: $footer-sitename-clr;
+    margin-bottom: 60px;
+
+    @include mobile {
+      font-weight: 500;
+      margin-bottom: 25px;
+      margin-left: 18px;
+    }
+
+    &_theme_dark {
+      color: $footer-sitename-dt;
+    }
+  }
+
+  &__submitemail{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 27.98px;
+    cursor: pointer;
+    margin-right: 22px;
+
+    &_active_true {
+      visibility: visible;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    width: 229px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      width: 284px;
+      margin-top: 60px;
+      margin-left: 0;
+    }
+  }
+
+  &__switchmobile {
+
+    display: none;
+
+    @include mobile {
+      display: block;
+      width: 38px;
+      height: 38px;
+      background-image: url(./../images/footer/logo_footer.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @include mobile {
+    align-items: center;
+    max-width: 320px;
+    align-self: center;
+  }
+
+  &_theme_dark {
+    background-color: $footer-dark-theme;
+  }
+
+}
