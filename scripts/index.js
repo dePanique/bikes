@@ -133,7 +133,7 @@ function createCard(bikeObj, bikeNumber) {
   element.querySelector('.bikes__bike-name').textContent = bikeObj[bikeNumber][0];
   element.querySelector('.bikes__picture').src = bikeObj[bikeNumber][1];
 
-  if (scrollWidth < 1200) {
+  if (scrollWidth < 800) {
     const bikesPoint = element.querySelectorAll('.bikes__point');
 
     currentActivePoint = bikesPoint[0];
@@ -188,7 +188,7 @@ function fillShowFrame(bikeObj) {
 
   currentBikeObject = bikeObj;
 
-  if (scrollWidth > 1200) {
+  if (scrollWidth > 800) {
 
     appendBikeCard(createCard(bikeObj, 'one'));
     appendBikeCard(createCard(bikeObj, 'two'));
@@ -255,7 +255,7 @@ window.onresize = function() {
     document.body.clientWidth,
   );
 
-  if (scrollWidth < 1200 && getBikesShowFrameStatus === 3) {
+  if (scrollWidth < 800 && getBikesShowFrameStatus === 3) {
 
     cleanShowFrame();
 
@@ -263,7 +263,7 @@ window.onresize = function() {
 
   }
 
-  if (scrollWidth > 1200 && getBikesShowFrameStatus === 1) {
+  if (scrollWidth > 800 && getBikesShowFrameStatus === 1) {
 
     cleanShowFrame();
 
@@ -280,7 +280,7 @@ shosseButton.addEventListener('click', (event) => {
 
   cleanShowFrame();
 
-  if (scrollWidth < 1200) {
+  if (scrollWidth < 800) {
     fillShowFrame(shosse);
   } else {
     fillShowFrame(shosse)
@@ -298,7 +298,7 @@ gravelButton.addEventListener('click', (event) => {
 
   cleanShowFrame();
 
-  if (scrollWidth < 1200) {
+  if (scrollWidth < 800) {
     fillShowFrame(gravel);
   } else {
     fillShowFrame(gravel)
@@ -317,7 +317,7 @@ ttButton.addEventListener('click', (event) => {
 
   cleanShowFrame();
 
-  if (scrollWidth < 1200) {
+  if (scrollWidth < 800) {
     fillShowFrame(tt);
   } else {
     fillShowFrame(tt)

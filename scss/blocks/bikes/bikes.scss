@@ -6,20 +6,19 @@
   padding-bottom: 104px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   &__bike-name {
 
     margin: 0;
     padding: 0;
-    @include font600(18px, 22px);
+    @include font600(font-size, 18px, 14px);
+    @include font600(line-height, 22px, 18px);
     position: absolute;
     bottom: -42px;
     left: 6px;
 
     @include mobile {
       width: 140px;
-      @include font600(14px, 18px);
       text-align: center;
       position:unset;
     }
@@ -44,7 +43,9 @@
     margin: 0;
     padding: 0;
     max-width: 62px;
-    @include font400(18px, 28px);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
     opacity: .7;
     cursor: pointer;
 
@@ -63,7 +64,7 @@
 
     &_active_true {
       opacity: 1;
-      @include font600(18px, 28px);
+      font-weight: 600;
       color: inherit;
 
       &:hover {
@@ -78,10 +79,10 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    max-width: $mobile-max-res;
+    max-width: 1200px;
     align-items: baseline;
-    width: calc(100vw - 36px);
-    margin-bottom: 120px;
+    margin-bottom: 60px;
+    padding-right: 18px;
 
     @include mobile {
 
@@ -98,6 +99,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 60px;
 
     &:nth-of-type(2) {
       margin-left: 30px;
@@ -117,7 +119,9 @@
       height: 30px;
       border-radius: 2px;
       border: 1px $bikes-option-line solid;
-      @include font600(11px, 14px);
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 14px;
       background: $clr-white;
       margin-top: 40px;
       align-self: baseline;
@@ -202,12 +206,8 @@
 
     display: flex;
     flex-wrap: wrap;
-
-    &:nth-of-type(2) {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
+    max-width: 1200px;
+    justify-content: space-around;
   }
 
   &__title {
@@ -215,12 +215,12 @@
     width: 460px;
     margin: 0;
     padding: 0;
-    @include font700(55px, 60px);
+    @include font700(font-size, 55px, 32px);
+    @include font700(line-height, 60px, 40px);
     letter-spacing: -0.5px;
 
     @include mobile {
 
-      @include font700(32px, 40px);
       margin-top: 40px;
       width: 284px;
       align-self: flex-start;
