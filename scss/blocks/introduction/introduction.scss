@@ -1,17 +1,16 @@
 .introduction {
 
-  max-width: $desk-max-res;
+  max-width: 1320px;
   width: 100%;
   max-height: 856px;
   box-sizing: border-box;
   display: grid;
+  align-self: flex-end;
   grid-template-areas:
   'title picture'
   'description picture'
   'button picture'
   'manufacturer picture';
-  justify-content: end;
-  padding-left: 18px;
   padding-top: 20px;
   grid-template-columns: minmax(195px, 585px) minmax(100px, 735px);
   grid-template-rows: min-content min-content 50px min-content;
@@ -44,8 +43,8 @@
     box-shadow: -20px 13px 20px 6px $introduction-card-shadow;
     position: sticky;
     top: 75px;
-    @include responsiveAfter800px(margin-top, 327px, 1.46);
-    @include responsiveAfter800px(margin-bottom, 79px, 1.46);
+    @include responsiveAfter800px(margin-top, 327px, 1.4);
+    @include responsiveAfter800px(margin-bottom, 79px, 1.4);
     margin-right: auto;
     z-index: 2;
     background-color: $clr-white;
@@ -116,8 +115,8 @@
   grid-area: manufacturer;
   align-self: start;
 
-  @include responsiveAfter800px(margin-top, 167px, 10);
-  @include responsiveAfter800px(margin-bottom, 209px, 10);
+  @include responsiveAfter800px(margin-top, 167px, 1.8);
+  @include responsiveAfter800px(margin-bottom, 209px, 1.8);
 
     @include mobile {
       grid-area: unset;
@@ -175,7 +174,6 @@
 
     @include mobile {
       max-width: 284px;
-      //@include font700(32px, 40px);
       align-self: center;
     }
   }

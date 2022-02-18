@@ -23,6 +23,8 @@
 
 @mixin responsiveAfter800px($selector, $value, $coefficient: 1.8, $rez-delta: 640) {
 
+  
+
   $str-value: strip-units($value);
   $target-value : $value/$coefficient;
   $value-delta : $str-value - strip-units($target-value);
@@ -38,12 +40,12 @@
 
 @mixin responsiveFont($selector, $int-value, $target-value) {
 
-  $value-delta: strip-units($int-value/$target-value);
+  $value-delta: strip-units($int-value - $target-value);
 
   #{$selector}:
   #{
     clamp(#{$target-value},
-    calc(#{$target-value} + (100vw - 320px)*(#{$value-delta}/1120)),
+    calc(#{$int-value} - (1440px - 100vw)*(#{$value-delta}/1120)),
     #{$int-value})
   };
 

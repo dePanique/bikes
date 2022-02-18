@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  border: 3px solid red;
 }
 .page_theme_dark {
   background-color: #333333;
@@ -166,18 +165,17 @@
   display: flex;
   max-width: 1440px;
   flex-direction: column;
-  align-items: center;
+  padding-left: clamp(17.9104477612px, calc(17.9104477612px + (100vw - 800px)*(102.0895522388/640)), 120px);
 }
 
 .introduction {
-  max-width: 1440px;
+  max-width: 1320px;
   width: 100%;
   max-height: 856px;
   box-sizing: border-box;
   display: grid;
+  align-self: flex-end;
   grid-template-areas: "title picture" "description picture" "button picture" "manufacturer picture";
-  justify-content: end;
-  padding-left: 18px;
   padding-top: 20px;
   grid-template-columns: minmax(195px, 585px) minmax(100px, 735px);
   grid-template-rows: -webkit-min-content -webkit-min-content 50px -webkit-min-content;
@@ -210,8 +208,8 @@
   position: -webkit-sticky;
   position: sticky;
   top: 75px;
-  margin-top: clamp(223.9726027397px, calc(223.9726027397px + (100vw - 800px)*(103.0273972603/640)), 327px);
-  margin-bottom: clamp(54.1095890411px, calc(54.1095890411px + (100vw - 800px)*(24.8904109589/640)), 79px);
+  margin-top: clamp(233.5714285714px, calc(233.5714285714px + (100vw - 800px)*(93.4285714286/640)), 327px);
+  margin-bottom: clamp(56.4285714286px, calc(56.4285714286px + (100vw - 800px)*(22.5714285714/640)), 79px);
   margin-right: auto;
   z-index: 2;
   background-color: #f4f4f4;
@@ -244,9 +242,9 @@
   padding: 0;
   max-width: 460px;
   font-weight: 400;
-  font-size: clamp(12px, calc(12px + (100vw - 320px)*(1.5/1120)), 18px);
+  font-size: clamp(12px, calc(18px - (1440px - 100vw)*(6/1120)), 18px);
   font-weight: 400;
-  line-height: clamp(18px, calc(18px + (100vw - 320px)*(1.5555555556/1120)), 28px);
+  line-height: clamp(18px, calc(28px - (1440px - 100vw)*(10/1120)), 28px);
   opacity: 0.7;
   grid-area: description;
 }
@@ -273,8 +271,8 @@
   align-items: center;
   grid-area: manufacturer;
   align-self: start;
-  margin-top: clamp(16.7px, calc(16.7px + (100vw - 800px)*(150.3/640)), 167px);
-  margin-bottom: clamp(20.9px, calc(20.9px + (100vw - 800px)*(188.1/640)), 209px);
+  margin-top: clamp(92.7777777778px, calc(92.7777777778px + (100vw - 800px)*(74.2222222222/640)), 167px);
+  margin-bottom: clamp(116.1111111111px, calc(116.1111111111px + (100vw - 800px)*(92.8888888889/640)), 209px);
 }
 @media screen and (max-width: 800px) {
   .introduction__manufacturer-row {
@@ -286,9 +284,9 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: clamp(18px, calc(18px + (100vw - 320px)*(1/1120)), 18px);
+  font-size: clamp(18px, calc(18px - (1440px - 100vw)*(0/1120)), 18px);
   font-weight: 400;
-  line-height: clamp(18px, calc(18px + (100vw - 320px)*(1/1120)), 18px);
+  line-height: clamp(18px, calc(18px - (1440px - 100vw)*(0/1120)), 18px);
 }
 .introduction__picture {
   background-repeat: no-repeat;
@@ -324,9 +322,9 @@
   padding: 0;
   max-width: 460px;
   font-weight: 700;
-  font-size: clamp(32px, calc(32px + (100vw - 320px)*(1.875/1120)), 60px);
+  font-size: clamp(32px, calc(60px - (1440px - 100vw)*(28/1120)), 60px);
   font-weight: 700;
-  line-height: clamp(40px, calc(40px + (100vw - 320px)*(1.5/1120)), 60px);
+  line-height: clamp(40px, calc(60px - (1440px - 100vw)*(20/1120)), 60px);
   letter-spacing: -0.5px;
   grid-area: title;
   align-self: start;
@@ -342,7 +340,7 @@
   height: 50px;
   border-radius: 4px;
   font-weight: 600;
-  font-size: clamp(14px, calc(14px + (100vw - 320px)*(1/1120)), 14px);
+  font-size: clamp(14px, calc(14px - (1440px - 100vw)*(0/1120)), 14px);
   line-height: 50px;
   color: white;
   text-align: center;
@@ -378,5 +376,96 @@
   .introduction__detail:hover::before {
     width: 284px;
     border-radius: 4px;
+  }
+}
+
+.two-columns {
+  box-sizing: border-box;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 120px;
+  padding-right: 18px;
+  padding-bottom: 60px;
+}
+.two-columns__picture {
+  width: clamp(361.1111111111px, calc(361.1111111111px + (100vw - 800px)*(288.8888888889/640)), 650px);
+  height: clamp(255.5555555556px, calc(255.5555555556px + (100vw - 800px)*(204.4444444444/640)), 460px);
+  max-width: 650px;
+  max-height: 460px;
+  grid-area: picture;
+}
+@media screen and (max-width: 800px) {
+  .two-columns__picture {
+    max-width: 284px;
+    margin-bottom: 40px;
+    border-top: 1px solid #e3e3e3;
+    padding-top: 20px;
+  }
+}
+.two-columns__quote {
+  margin: 0;
+  padding: 0;
+  max-width: 470px;
+  width: 100%;
+  font-weight: 600;
+  font-size: clamp(23px, calc(34px - (1440px - 100vw)*(11/1120)), 34px);
+  font-weight: 600;
+  line-height: clamp(29px, calc(44px - (1440px - 100vw)*(15/1120)), 44px);
+  letter-spacing: -0.5px;
+}
+@media screen and (max-width: 800px) {
+  .two-columns__quote {
+    margin-bottom: 40px;
+  }
+}
+.two-columns__quote-author {
+  margin: 0;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: 6px;
+  max-width: 470px;
+  font-weight: 500;
+  font-size: clamp(14px, calc(20px - (1440px - 100vw)*(6/1120)), 20px);
+  font-weight: 500;
+  line-height: clamp(22px, calc(32px - (1440px - 100vw)*(10/1120)), 32px);
+}
+@media screen and (max-width: 800px) {
+  .two-columns__quote-author {
+    margin-bottom: 4px;
+  }
+}
+.two-columns__quote-author-business {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: clamp(10px, calc(16px - (1440px - 100vw)*(6/1120)), 16px);
+  font-weight: 400;
+  line-height: clamp(16px, calc(28px - (1440px - 100vw)*(12/1120)), 28px);
+  opacity: 0.7;
+  max-width: 470px;
+}
+.two-columns__quote-author-business_dark_theme {
+  color: #e5e5e5;
+}
+.two-columns__text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 470px;
+  margin-left: clamp(44.4444444444px, calc(44.4444444444px + (100vw - 800px)*(35.5555555556/640)), 80px);
+}
+@media screen and (max-width: 800px) {
+  .two-columns__text-column {
+    max-width: 284px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .two-columns {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 284px;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=indexscss.css.map */
